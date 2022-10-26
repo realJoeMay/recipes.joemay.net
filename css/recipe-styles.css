@@ -33,6 +33,7 @@ body.recipe-page {
 
 .recipe-banner .recipe-image {
     max-width: 100%;
+    height: 0;
     box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
     padding-bottom: calc(540 / 960 * 100%);
     background-size: cover;
@@ -57,14 +58,15 @@ body.recipe-page {
     box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
 }
 
-.recipe-box:last-child {
-    /*margin-bottom: 100px;*/
-}
-
 @media only screen and (min-width: 600px) {
     .recipe-box {
         padding: 60px;
     }
+}
+
+.title-area {
+    display: flex;
+    justify-content: space-between;
 }
 
 .recipe-title {
@@ -113,12 +115,18 @@ body.recipe-page {
 
 .ingredient {
     width: 100%;
+    /* display: grid; */
 }
 
 @media only screen and (min-width: 600px){
     .ingredient {
         width: 48%;
     }
+}
+
+.ingredient-cost {
+    display: none;
+    color: green;
 }
 
 .ingredient-amount {
@@ -136,9 +144,6 @@ body.recipe-page {
     color: #888;
     font-style: italic;
     font-weight: 400;
-}
-
-.instructions-steps {
 }
 
 .step {
@@ -193,3 +198,107 @@ body.recipe-page {
     fill: #999;
 }
 
+
+
+
+
+.settings-btn {
+    width: 1.5rem;
+    fill: #ccc;
+    transition: fill 0.3s;
+    cursor: pointer;
+}
+
+.settings-btn:hover {
+    fill: #999;
+}
+
+
+
+
+
+
+
+
+
+.per-serving {
+
+}
+
+.per-recipe {
+    font-weight: 600;
+}
+
+.serving-recipe-divider {
+    margin: 0 2px;
+}
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    padding: 60px 20px 20px;
+    /* border-left: solid 1px #ccc; */
+    margin-right: -250px;
+}
+
+.nav-open .sidenav {
+    margin-right: 0;
+}
+
+.nav-open .recipe {
+    margin-right: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-open .recipe {
+        margin-right: 0;
+    }
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #444;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.recipe {
+    transition: margin-right .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+.show-ingredient-cost .ingredient-cost {
+    display: block;
+}
