@@ -533,7 +533,8 @@ function modeLight() {
 function checkTheme() {
     console.log("Checking theme now");
     if (getCookie("theme") == "dark") {
-        modeDark();
+          document.getElementById("dark").checked = true;
+          modeDark();
     }
 }
 checkTheme()
