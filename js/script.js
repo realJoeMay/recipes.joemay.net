@@ -53,13 +53,10 @@ function clearTheme() {
 function checkTheme() {
     console.log("Checking theme now");
     if (getCookie("theme") == "dark") {
-        document.querySelector("#theme-dark").checked = true;
         themeDark();
     } else if (getCookie("theme") == "light") {
-        document.querySelector("#theme-light").checked = true;
         themeLight(); 
     } else {
-        document.querySelector("#theme-system").checked = true;
         themeSystem();
     }
 }
