@@ -39,7 +39,8 @@ function themeLight() {
 }
 
 function themeSystem() {
-    clearTheme()
+//     clearTheme()
+//     console.log("Checking theme now");
     document.querySelector("body").classList.add("theme-system");
     setCookie("theme", "system", 365)
 }
@@ -52,6 +53,7 @@ function clearTheme() {
 
 function checkTheme() {
     console.log("Checking theme now");
+    console.log(getCookie("theme"));
     if (getCookie("theme") == "dark") {
         themeDark();
     } else if (getCookie("theme") == "light") {
