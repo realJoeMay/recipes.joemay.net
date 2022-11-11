@@ -235,7 +235,7 @@ body.recipe-page {
 
 
 /* Menu */
-
+/* 
 .home-link {
     margin: 0 auto;
     text-align: center;
@@ -250,22 +250,35 @@ body.recipe-page {
 .home-link a:hover svg {
     fill: #999;
 }
+ */
 
 
 
 
-
-.menu-btn {
-    width: 1.5rem;
+.menu-btn,
+.menu .close-btn {
     fill: #ccc;
     transition: fill 0.3s;
     cursor: pointer;
 }
 
-.menu-btn:hover {
-    fill: #999;
+.menu-btn {
+    width: 1.5rem;
+
 }
 
+.menu .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 1rem;
+    margin-left: 50px;
+}
+
+.menu-btn:hover,
+.menu .close-btn:hover {
+    fill: #777;
+}
 
 
 
@@ -322,15 +335,6 @@ body.recipe-page {
     color: #444;
 }
 
-.menu .close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    cursor: pointer;
-    width: 1rem;
-}
 
 .recipe {
     transition: margin-right .5s;
@@ -475,7 +479,7 @@ body.recipe-page {
                 <body class='recipe-page'>
                     
             <div id="menu" class="menu">
-                <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></a>
+                <span href="javascript:void(0)" class="close-btn" onclick="closeMenu()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></span>
                 <div>
 
                     <h3 href="#">Theme</h3>
@@ -600,8 +604,6 @@ function showIngredientNone() {
 }
 
 
-
-
 // Theme
 
 function themeDark() {
@@ -637,12 +639,11 @@ function checkTheme() {
         document.querySelector("#theme-light").checked = true;
         themeLight(); 
     } else {
-        document.getElementById("theme-system").checked = true;
+        document.querySelector("#theme-system").checked = true;
         themeSystem();
     }
 }
 checkTheme()
-
 
 </script>
 
