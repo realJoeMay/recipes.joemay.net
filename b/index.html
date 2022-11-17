@@ -1,0 +1,275 @@
+
+            <!DOCTYPE html>
+            <html lang='en'>
+                <head>
+                    <meta charset='utf-8'>
+                    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                    <title>JM Recipes</title>
+                    <link rel='preconnect' href='https://fonts.googleapis.com'>
+                    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+                    <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' rel='stylesheet'>
+
+                    <link rel='icon' type='image/x-icon' href='/icon.png'>
+                    <style>html {
+    background: #f6f6f6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body, h2, h3 {
+    margin: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.archive {
+    max-width: 900px;
+    margin:  30px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #444;
+}
+
+.filters {
+}
+
+.filter-content {
+    /*position: fixed;*/
+}
+
+.recipes {
+    min-width: 65%;
+    padding: 0 10px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+}
+
+.recipe-image-area {
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,0.1) 100%);
+}
+
+.recipe-image {
+    padding-bottom: calc(540 / 720 * 100%);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0,0,0,0);
+}
+
+.recipe-image-wrap img {
+    max-width:  100%;
+    vertical-align: bottom; /* remove gap below image */
+}
+
+.recipe-title-area {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recipe-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.recipe-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #999;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .archive {
+        flex-direction: row;
+    }
+    
+    .filters {
+        min-width: 35%;
+        /*flex: 1 1 40%;*/
+    }
+
+    .filter-content {
+        position: fixed;
+    }
+
+    .recipe {
+        flex-direction: row;
+    }
+    
+    .recipe-image-area {
+        width:  35%;
+    }
+
+    .recipe-image {
+        position: relative;
+        height: 0;
+    }
+
+/*    .recipe-image img {
+        max-width: 100%;
+        height: auto; 
+    }
+*/
+}
+
+</style>
+
+                </head>
+                <body class='archive'>
+                    <div class='filters'>
+                        <div class="filter-content">
+                            <h1 class="site-title">JM Recipes</h1>
+                        </div>
+                    </div>
+                    <div class='recipes'>
+                        
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./baked-potatoes/baked-potato-960x540.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Baked Potato</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./burgers/balsamic-onion-burgers-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Balsamic Onion Burgers</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(dog_720x540.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Chicken and Cauliflower</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(dog_720x540.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Chicken and Sausage</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./chili/chili_16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">JM Chili</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./french-toast/french-toast-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">French Toast</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./guacamole/guacamole_16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Guacamole</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./jm-steak/jm-steak-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">JM Steak</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./meatballs/meatballs-960x540.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Meatballs</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./beef/roast-beef-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Roast Beef</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./pork-tenderloin/pork-tenderloin-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Roasted Pork Tenderloin</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(./sheet-pan-chicken/Sheet-Pan-Chicken-with-Vegetables-16x9.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Sheet Pan Chicken</h2>
+                    
+                </div>
+            </a>
+            <a href="./chili/" class="recipe">
+                <div class="recipe-image-area">
+                    <div class="recipe-image" style="background-image:url(dog_720x540.jpg);">
+                    </div>
+                </div>
+                <div class="recipe-title-area">
+                    <h2 class="recipe-title">Smoothie</h2>
+                    
+                </div>
+            </a>
+                    </div>
+                </body>
+            </html>
