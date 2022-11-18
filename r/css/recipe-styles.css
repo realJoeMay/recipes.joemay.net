@@ -305,7 +305,7 @@ body.menu-open .recipe {
 }
 
 /* fix menu slides out on initial load */
-.initial .menu {
+.loading .menu {
     transition: margin-right 0s;
 }
 
@@ -313,9 +313,6 @@ body.menu-open .recipe {
 
 
 
-.show-ingredient-cost .ingredient-cost {
-    display: block;
-}
 
 
 
@@ -449,3 +446,12 @@ body.menu-open .recipe {
 
 
 /* dark theme transition */
+
+
+
+
+
+
+
+
+
