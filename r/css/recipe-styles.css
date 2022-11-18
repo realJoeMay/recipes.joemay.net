@@ -302,7 +302,7 @@ body.menu-open .recipe {
 
 .recipe,
 .menu {
-    transition: margin-right .5s;
+    transition: margin-right 5s;
 }
 
 
