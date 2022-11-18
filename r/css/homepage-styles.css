@@ -121,6 +121,10 @@ a {
     background-color: #222;
 }
 
+.theme-dark .recipe-image-area {
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.15) 50%, rgba(0,0,0,0.1) 100%);
+}
+
 .theme-dark .recipe-image {
     filter: brightness(80%);
 }
@@ -141,6 +145,10 @@ a {
         background-color: #222;
     }
     
+    .theme-system .recipe-image-area {
+        background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.15) 50%, rgba(0,0,0,0.1) 100%);
+    }
+
     .theme-system .recipe-image {
         filter: brightness(80%);
     }

@@ -95,3 +95,11 @@ function checkTheme() {
 }
 checkTheme()
 
+
+
+// fix menu slides out on initial load
+setTimeout(function() {
+    document.querySelector("body").classList.remove("loading");
+}, 1000)
+
+

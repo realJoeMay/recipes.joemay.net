@@ -271,7 +271,6 @@ body.recipe-page {
     fill: #888;
 }
 
-
 /* menu items */
 .menu-header {
     color: #888;
@@ -302,10 +301,13 @@ body.menu-open .recipe {
 
 .recipe,
 .menu {
-    transition: margin-right 0.3s;
+    transition: margin-right .5s;
 }
 
-
+/* fix menu slides out on initial load */
+.initial .menu {
+    transition: margin-right 0s;
+}
 
 
 
