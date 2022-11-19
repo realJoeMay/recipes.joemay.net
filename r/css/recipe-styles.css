@@ -101,7 +101,7 @@ body.recipe-page {
 .description-area {
     padding-top: 1rem;
     margin-top: 1rem;
-    border-top: solid 1px #e0e0e0;
+    border-top: solid 1px #ccc;
 }
 
 
@@ -124,7 +124,7 @@ body.recipe-page {
 
     padding-top: 1.2rem;
     margin-top: 1rem;
-    border-top: solid 1px #e0e0e0;
+    border-top: solid 1px #ccc;
 }
 
 .ingredient-list-name:first-child {
@@ -133,7 +133,7 @@ body.recipe-page {
     border-top: none;
 }
 
-.ingredient-list {
+/* .ingredient-list {
     padding-bottom: 1.2rem;
     margin-bottom: 1rem;
     border-bottom: solid 1px #e0e0e0;
@@ -150,7 +150,7 @@ body.recipe-page {
     flex-wrap: wrap;
     row-gap: 0.75rem;
     column-gap: 4%;
-}
+} */
 
 .ingredient {
     width: 100%;
@@ -179,10 +179,10 @@ body.recipe-page {
     font-weight: 400;
 }
 
-.ingredient-cost {
+/* .ingredient-cost {
     display: none;
     color: green;
-}
+} */
 
 
 /* INSTRUCTIONS */
@@ -191,7 +191,7 @@ body.recipe-page {
     display: flex;
     padding: 0 0 1.25rem 0;
     margin: 0 0 1.25rem 0;
-    border-bottom: solid 1px #E0E0E0;
+    border-bottom: solid 1px #ccc;
 }
 
 .step:last-child {
@@ -274,15 +274,32 @@ body.recipe-page {
 /* menu items */
 .menu-header {
     color: #888;
+    fill: #888;
     font-size: 1.6rem;
     padding: 0.8rem 0 0.4rem;
     font-weight: 600;
 }
 
-a.menu-header:hover {
+.menu-link {
+    display: flex;
+}
+
+.link-arrow {
+    display: flex;
+}
+
+.link-arrow svg {
+    width: 20px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.menu-link:hover {
     text-decoration: none;
     color: #222;
+    fill: #222;
 }
+
 
 /* open menu */
 body.menu-open .menu {
@@ -351,10 +368,12 @@ body.menu-open .recipe {
 .theme-dark .box-title,
 .theme-dark .menu-header {
     color: #ccc;
+    fill: #ccc;
 }
 
-.theme-dark a.menu-header:hover {
+.theme-dark .menu-link:hover {
     color: #fff;
+    fill: #fff;
 }
 
 .theme-dark,
@@ -410,10 +429,12 @@ body.menu-open .recipe {
     .theme-system .box-title,
     .theme-system .menu-header {
         color: #ccc;
+        fill: #ccc;
     }
     
-    .theme-system a.menu-header:hover {
+    .theme-system .menu-link:hover {
         color: #fff;
+        fill: #fff;
     }
     
     .theme-system,
