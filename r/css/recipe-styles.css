@@ -54,6 +54,7 @@ body.recipe-page {
     position: relative;
     max-width: 88%;
     margin: 0px auto 0;
+    container-type: inline-size;
 }
 
 .recipe-box {
@@ -65,7 +66,7 @@ body.recipe-page {
     box-shadow: 0 1px 10px rgb(0 0 0 / 8%);
 }
 
-@media only screen and (min-width: 600px) {
+@container (min-width: 600px) {
     .recipe-box {
         padding: 60px;
     }
@@ -139,7 +140,7 @@ body.recipe-page {
     width: 100%;
 }
 
-@media only screen and (min-width: 600px){
+@container (min-width: 600px){
     .ingredient {
         width: 48%;
     }
