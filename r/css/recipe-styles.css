@@ -243,12 +243,18 @@ body.recipe-page {
 .menu-close-btn {
     cursor: pointer;
     padding: 0.5rem;
-    /* border-radius: 3px; */
+    border-radius: 3px;
+}
+
+.menu-btn svg,
+.menu-close-btn svg {
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .menu-btn {
     width: 1.2rem;
-    /* height: 1.2rem; */
+    height: 1.2rem;
     flex-shrink: 0;
 }
 
