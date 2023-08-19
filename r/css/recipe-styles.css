@@ -239,7 +239,7 @@ body.recipe-page {
 
 .menu-btn,
 .menu-close-btn {
-    /* fill: rgb(55, 53, 47); */
+    fill: rgb(55, 53, 47);
     cursor: pointer;
     padding: 0.5rem;
     border-radius: 3px;
