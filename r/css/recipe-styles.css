@@ -165,6 +165,7 @@ body.recipe-page {
 
 .ingredient-cost {
     display: none;
+    font-style: italic;
 }
 
 .show-detail-cost .ingredient-cost {
