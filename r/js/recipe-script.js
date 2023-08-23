@@ -50,7 +50,7 @@ setTimeout(function() {
 
 
 
-// Togggle Menu Items
+// Togggle Menu Item - THEME
 
 function toggleAppearance() {
     if (document.querySelector("body").classList.contains("menu-appearance-open")) {
@@ -69,6 +69,23 @@ function hideMenuAppearance() {
 }
 
 
+// Togggle Menu Item - DETAILS
+
+function toggleDetail() {
+    if (document.querySelector("body").classList.contains("menu-details-open")) {
+        hideMenudetail();
+    } else {
+        showMenudetail();
+    }
+}
+
+function showMenudetail() {
+    document.querySelector("body").classList.add("menu-details-open");
+}
+
+function hideMenudetail() {
+    document.querySelector("body").classList.remove("menu-details-open");
+}
 
 
 
@@ -76,13 +93,14 @@ function hideMenuAppearance() {
 
 // ingredient details
 
-// function showIngredientCost() {
-//     document.querySelector("body").classList.add("show-ingredient-cost");
-// }
+function detailNone() {
+    document.querySelector("body").classList.remove("show-detail-cost");
+}
 
-// function showIngredientNone() {
-//     document.querySelector("body").classList.remove("show-ingredient-cost");
-// }
+function detailCost() {
+    document.querySelector("body").classList.add("show-detail-cost");
+}
+
 
 
 // Theme
@@ -111,7 +129,7 @@ function clearTheme() {
     document.querySelector("body").classList.remove("theme-system");
 }
 
-function checkTheme() {
+function loadPreviousTheme() {
     console.log("Checking theme now");
     if (getCookie("theme") == "dark") {
         document.querySelector("#theme-dark").checked = true;
@@ -124,27 +142,24 @@ function checkTheme() {
         themeSystem();
     }
 }
-checkTheme()
+loadPreviousTheme()
 
 
 
 
 
 // Copy Ingredients
-var copyButton = document.getElementById("copy-ingredients-btn");
-var copyButtonText = document.getElementById("copy-ingredients-btn-text");
-var textToCopy = document.getElementById("ingredients-text");
+var copyButton = document.querySelector("#copy-ingredients-btn");
+var copyButtonText = document.querySelector("#copy-ingredients-btn-text");
+var textToCopy = document.querySelector("#ingredients-text");
 
 copyButton.addEventListener("click", function() {
     var copiedText = "";
     textToCopy.querySelectorAll("li").forEach(function(line) {
         copiedText += line.textContent.trim() + "\n";
     });
-
-    // Copy the text to the clipboard
     navigator.clipboard.writeText(copiedText)
         .then(function() {
-            // Change the button text briefly to indicate copy
             copyButtonText.textContent = "Copied!";
             setTimeout(function() {
                 copyButtonText.textContent = "Copy Ingredients";

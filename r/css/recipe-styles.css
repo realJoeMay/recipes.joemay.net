@@ -163,10 +163,13 @@ body.recipe-page {
     font-weight: 400;
 }
 
-/* .ingredient-cost {
+.ingredient-cost {
     display: none;
-    color: green;
-} */
+}
+
+.show-detail-cost .ingredient-cost {
+    display: block;
+}
 
 
 /* INSTRUCTIONS */
@@ -234,7 +237,7 @@ body.recipe-page {
 .icon-wrapper {
     display: flex;
     align-items: center;
-    fill: rgb(55, 53, 47);
+    fill: rgb(85, 88, 92);
 }
 
 
@@ -355,13 +358,22 @@ body.menu-open .recipe {
     transform: rotate(180deg);
 }
 
+.menu-details-open .menu-detail .menu-content {
+    display: block;
+}
+
+.menu-details-open .menu-detail .toggle-icon {
+    transform: rotate(180deg);
+}
+
+
 
 
 
 /* TEMP */
-.ingredient-cost,
+
 .ingredient-debug {
-    display:none
+    display: none;
 }
 
 
