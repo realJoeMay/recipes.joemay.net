@@ -379,7 +379,10 @@ body.menu-open .recipe {
 
 
 
-
+/* Theme icons */
+.icon-dark {
+    display:none
+}
 
 
 
@@ -441,6 +444,12 @@ body.theme-dark {
     border-color: #666;
 }
 
+.theme-dark .icon-dark {
+    display:block;
+}
+.theme-dark .icon-light {
+    display:none;
+}
 
 
 
@@ -495,6 +504,13 @@ body.theme-dark {
     .theme-system .ingredient-list-name,
     .theme-system .step {
         border-color: #666;
+    }
+    
+    .theme-system .icon-dark {
+        display:block;
+    }
+    .theme-system .icon-light {
+        display:none;
     }
     
 }
