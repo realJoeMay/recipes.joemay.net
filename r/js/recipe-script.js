@@ -45,7 +45,7 @@ function closeMenu() {
 // fix menu slides out on initial load
 setTimeout(function() {
     document.querySelector("body").classList.remove("loading");
-}, 1000)
+}, 10)
 
 
 
@@ -95,11 +95,25 @@ function hideMenudetail() {
 
 function detailNone() {
     document.querySelector("body").classList.remove("show-detail-cost");
+    document.querySelector("body").classList.remove("show-detail-nutrition");
+    document.querySelector("body").classList.remove("show-detail-cost-ps");
 }
 
 function detailCost() {
+    detailNone()
     document.querySelector("body").classList.add("show-detail-cost");
 }
+
+function detailCostPerServing() {
+    detailNone()
+    document.querySelector("body").classList.add("show-detail-cost-ps");
+}
+
+function detailNutrition() {
+    detailNone()
+    document.querySelector("body").classList.add("show-detail-nutrition");
+}
+
 
 
 

@@ -14,11 +14,11 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: #3a91e8;
+    /* color: #3a91e8; */
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 body.recipe-page {
@@ -104,7 +104,15 @@ body.recipe-page {
     padding-top: 1rem;
     margin-top: 1rem;
     border-top: solid 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
 }
+
+/* NUTRITION */
+
+
+
 
 
 
@@ -163,12 +171,29 @@ body.recipe-page {
     font-weight: 400;
 }
 
-.ingredient-cost {
+
+/* INGREDIENT DETAILS */
+
+.ingredient-cost,
+.ingredient-cost-ps {
     display: none;
     font-style: italic;
 }
 
 .show-detail-cost .ingredient-cost {
+    display: block;
+}
+
+.show-detail-cost-ps .ingredient-cost-ps {
+    display: block;
+}
+
+
+.ingredient-nutrition {
+    display: none;
+}
+
+.show-detail-nutrition .ingredient-nutrition {
     display: block;
 }
 
@@ -268,7 +293,6 @@ body.recipe-page {
     right: 20px;
     width: 1rem;
     height: 1rem;
-    /* margin-left: 50px; */
 }
 
 .menu-btn:hover,
@@ -311,16 +335,20 @@ body.recipe-page {
 
 .menu-link:hover {
     text-decoration: none;
-    /* color: #222;
-    fill: #222; */
 }
 
 .menu-content {
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem;
+    margin-bottom: 0.6rem; */
+    margin: 0.2rem 0 0.6rem 1.5rem;
     display: none;
 }
 
-
+.menu-option-subtext {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-left: 6px;
+}
 
 /* open menu */
 body.menu-open .menu {
@@ -371,13 +399,12 @@ body.menu-open .recipe {
 
 
 
-/* TEMP */
 
-.ingredient-debug {
-    display: none;
+/* icons */
+svg {
+    width: 1rem;
+    height: 1rem;
 }
-
-
 
 /* Theme icons */
 .icon-dark {
@@ -523,8 +550,9 @@ body.theme-dark {
 
 
 
-/* icons */
-svg {
-    width: 1rem;
-    height: 1rem;
+/* TEMP */
+
+.ingredient-debug {
+    display: none;
 }
+
