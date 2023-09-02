@@ -110,8 +110,22 @@ body.recipe-page {
 }
 
 /* NUTRITION */
+.nutrition {
+    display: grid;
+    /* color:red; */
+    grid-template-columns: 0fr 1fr;
+    column-gap: 8px;
+}
 
+.nutrition .value {
+    grid-column-start: 1;
+    justify-self: end;
+}
 
+.nutrition .label {
+    grid-column-start: 2;
+    font-style: italic;
+}
 
 
 
@@ -191,6 +205,8 @@ body.recipe-page {
 
 .ingredient-nutrition {
     display: none;
+    margin: 4px 0 8px 6px;
+    font-size: 0.9rem;
 }
 
 .show-detail-nutrition .ingredient-nutrition {
