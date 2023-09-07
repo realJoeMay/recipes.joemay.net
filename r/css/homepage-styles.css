@@ -3,7 +3,11 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-body, h2, h3 {
+body {
+    min-height: 100vh;
+}
+
+body, h1, h2, h3 {
     margin: 0;
 }
 
@@ -17,12 +21,14 @@ a {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
 }
 
 .site-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: #444;
+    /* margin: 0 */
 }
 
 
@@ -81,7 +87,6 @@ a {
 
     .filters {
         min-width: 35%;
-        /*flex: 1 1 40%;*/
     }
 
     .recipe-card {
@@ -108,11 +113,62 @@ a {
     
     .filter-content {
         position: fixed;
+        
     }
 
 
 
 }
+
+
+/* SEARCH */
+
+.search-box {
+    min-width: 250px;
+    max-width: 300px;
+    padding: 0;
+    background: #00000011;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box:focus-within {
+    background: white;
+    box-shadow: 0px 1px 3px 0 rgba(70,70,70,0.4);
+}
+
+.search-input {
+    height: 2.5rem;
+    border: none;
+    padding-left: 10px;
+    flex-grow: 1;
+    background: transparent;
+}
+
+.search-input:focus-visible {
+    outline: none;
+}
+
+
+
+
+
+.search-active .recipe-card {
+    display: none;
+}
+
+.search-active .search-result-card {
+    display: flex;
+}
+
+
+
+
+
+
+
 
 
 /* DARK THEME */
@@ -139,6 +195,34 @@ a {
     color: #ccc;
 }
 
+
+/* search box */
+.theme-dark .search-box {
+    background-color: #444;
+}
+
+.theme-dark .search-input {
+    color: #ddd;
+}
+
+.theme-dark .search-box:focus-within {
+    background: #ddd;
+}
+
+.theme-dark ::placeholder {
+    color: #bbb;
+}
+
+.theme-dark .search-box:focus-within ::placeholder {
+    color: #888;
+}
+
+.theme-dark .search-box:focus-within .search-input {
+    color: #222;
+}
+
+
+
 @media (prefers-color-scheme: dark) {
 
     .theme-system {
@@ -162,4 +246,32 @@ a {
     .theme-system .recipe-title {
         color: #ccc;
     }
+
+
+
+
+    .theme-system .search-box {
+        background-color: #444;
+    }
+    
+    .theme-system .search-input {
+        color: #ddd;
+    }
+    
+    .theme-system .search-box:focus-within {
+        background: #ddd;
+    }
+    
+    .theme-system ::placeholder {
+        color: #bbb;
+    }
+
+    .theme-system .search-box:focus-within ::placeholder {
+        color: #888;
+    }
+    
+    .theme-system .search-box:focus-within .search-input {
+        color: #222;
+    }
+    
 }

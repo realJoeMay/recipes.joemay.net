@@ -32,3 +32,44 @@ function checkTheme() {
     }
 }
 checkTheme()
+
+
+
+
+// Search Recipes
+
+function search() {
+
+    var input = document.querySelector(".search-input").value.toLowerCase();
+    var cards = document.querySelectorAll(".recipe-card");
+    
+    // loop through each card
+    for (var i = 0; i < cards.length; i++) {
+        
+        var searchItems = cards[i].getElementsByClassName("search-target");
+        cards[i].classList.remove("search-result-card");
+
+
+        for (var j = 0; j < searchItems.length; j++) {
+            var text = searchItems[j].innerText.toLowerCase();
+
+            if (text.includes(input)) {
+                searchItems[j].classList.add("search-result");
+                cards[i].classList.add("search-result-card");
+            } else {
+                searchItems[j].classList.remove("search-result");
+            }
+        }
+
+        // check if the input is empty
+        if (input == "") {
+            document.querySelector("body").classList.remove("search-active")
+            cards[i].classList.remove("search-result");
+        } else {
+            document.querySelector("body").classList.add("search-active")
+        }
+
+        
+
+    }
+}

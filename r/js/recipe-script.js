@@ -24,7 +24,7 @@ function getCookie(cname) {
 }
 
 
-// Menu
+// Open & Close Menu
 
 function toggleMenu() {
     if (document.querySelector("body").classList.contains("menu-open")) {
@@ -174,13 +174,47 @@ copyButton.addEventListener("click", function() {
     });
     navigator.clipboard.writeText(copiedText)
         .then(function() {
-            copyButtonText.textContent = "Copied!";
+            // copyButtonText.textContent = "Copied!";
+            document.querySelector("body").classList.add("copied-ingredients");
             setTimeout(function() {
-                copyButtonText.textContent = "Copy Ingredients";
+                // copyButtonText.textContent = "Copy Ingredients";
+                document.querySelector("body").classList.remove("copied-ingredients");
             }, 3000);
         })
         .catch(function(err) {
             console.error('Unable to copy text: ', err);
         });
+});
+
+
+
+
+
+
+
+
+
+
+
+// Keyboard Shortcuts
+document.addEventListener("keydown", function(event) {
+
+    // console.log("event.keyCode: ", event.keyCode );
+
+    // m to open menu
+    if (event.keyCode === 77 || event.key === "m") {
+        openMenu()
+    }
+
+    // esc to close menu
+    if (event.keyCode === 27) {
+        closeMenu()
+    }
+
+    // ctrl-d for debug info
+    if (event.ctrlKey && (event.keyCode === 66 || event.key === "b")) {
+        document.querySelector("body").classList.toggle("show-debug");
+    }
+    
 });
 

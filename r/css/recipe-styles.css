@@ -12,12 +12,7 @@ h1, h2, h3 {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    /* color: #3a91e8; */
-}
-
-a:hover {
+a, a:hover {
     text-decoration: none;
 }
 
@@ -109,16 +104,17 @@ body.recipe-page {
     row-gap: 6px;
 }
 
+
 /* NUTRITION */
+
 .nutrition {
     display: grid;
-    /* color:red; */
     grid-template-columns: 0fr 1fr;
     column-gap: 8px;
 }
 
 .nutrition .value {
-    grid-column-start: 1;
+    /* grid-column-start: 1; */
     justify-self: end;
 }
 
@@ -126,8 +122,6 @@ body.recipe-page {
     grid-column-start: 2;
     font-style: italic;
 }
-
-
 
 
 /* INGREDIENTS */
@@ -326,6 +320,7 @@ body.recipe-page {
     font-weight: 400;
     border-radius: 3px;
     display: flex;
+    align-items: center;
 }
 
 .menu-header:hover {
@@ -354,8 +349,6 @@ body.recipe-page {
 }
 
 .menu-content {
-    /* margin-left: 1.5rem;
-    margin-bottom: 0.6rem; */
     margin: 0.2rem 0 0.6rem 1.5rem;
     display: none;
 }
@@ -414,6 +407,20 @@ body.menu-open .recipe {
 
 
 
+/* Copy Ingredients */
+
+.copied-ingredients-item {
+    display: none;
+}
+
+body.copied-ingredients .copied-ingredients-item {
+    display: block;
+}
+
+body.copied-ingredients .copy-ingredients-item {
+    display: none;
+}
+
 
 
 /* icons */
@@ -422,7 +429,6 @@ svg {
     height: 1rem;
 }
 
-/* Theme icons */
 .icon-dark {
     display:none
 }
@@ -566,9 +572,71 @@ body.theme-dark {
 
 
 
-/* TEMP */
+/* DEBUG */
 
 .ingredient-debug {
     display: none;
 }
 
+.show-debug .ingredient-debug {
+    display: block;
+}
+
+
+
+
+
+
+
+/* rounded switch */
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+}
+ 
+/* Hide the checkbox input */
+.toggle input {
+    display: none;
+}
+ 
+/* Describe slider's look and position. */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: .4s;
+    border-radius: 17px;
+}
+ 
+/* Describe the white ball's location
+      and appearance in the slider. */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+ 
+/* Modify the slider's background color to
+      green once the checkbox has been selected. */
+input:checked+.slider {
+    background-color: #146EBE;
+}
+ 
+/* When the checkbox is checked, shift the
+      white ball towards the right within the slider. */
+input:checked+.slider:before {
+    transform: translateX(12px);
+}
+  
