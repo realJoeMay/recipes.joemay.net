@@ -121,7 +121,7 @@ a {
 
 .search-box {
     min-width: 250px;
-    /* max-width: 300px; */
+    max-width: 300px;
     padding: 0;
     background: #00000011;
     border-radius: 3px;
@@ -141,6 +141,7 @@ a {
     padding-left: 10px;
     flex-grow: 1;
     background: transparent;
+    font-size: 1.2rem;
 }
 
 .search-input:focus-visible {
@@ -148,10 +149,15 @@ a {
 }
 
 /* EXPAND CARDS */
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
 
     .search-box {
-        max-width: 300px;
+        max-width: none;
+    }
+
+    .search-input {
+        height: 3rem;
+        font-size: 1.4rem;
     }
 }
 
