@@ -153,6 +153,22 @@ a {
 
 
 
+.ingredient {
+    display:none;
+}
+
+.search-active .search-result {
+    display:block;
+    color: #146EBE !important;
+}
+
+.search-result.ingredient::before {
+    content: "Ingredient:";
+    color: #146EBE;
+    margin-right: 6px;
+}
+
+
 
 
 .search-active .recipe-card {

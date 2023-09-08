@@ -48,16 +48,21 @@ function search() {
         
         var searchItems = cards[i].getElementsByClassName("search-target");
         cards[i].classList.remove("search-result-card");
+        var searchFound = false
 
+        // first clear all search targets
+        for (var j = 0; j < searchItems.length; j++) {
+            searchItems[j].classList.remove("search-result");
+        }
 
+        // now check for search
         for (var j = 0; j < searchItems.length; j++) {
             var text = searchItems[j].innerText.toLowerCase();
 
             if (text.includes(input)) {
                 searchItems[j].classList.add("search-result");
                 cards[i].classList.add("search-result-card");
-            } else {
-                searchItems[j].classList.remove("search-result");
+                break    
             }
         }
 
@@ -69,7 +74,6 @@ function search() {
             document.querySelector("body").classList.add("search-active")
         }
 
-        
 
     }
 }
