@@ -117,11 +117,11 @@ a {
 }
 
 
-/* SEARCH */
+/* SEARCH BOX */
 
 .search-box {
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 200px;
+    max-width: 250px;
     padding: 0;
     background: #00000011;
     border-radius: 3px;
@@ -141,12 +141,46 @@ a {
     padding-left: 10px;
     flex-grow: 1;
     background: transparent;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .search-input:focus-visible {
     outline: none;
 }
+
+.search-icon {
+    fill: #444;
+    margin: 0 5px 0 16px;
+}
+
+::placeholder {
+    color: #999;
+}
+
+
+
+/* search results */
+
+.ingredient {
+    display:none;
+}
+
+.ingredient::before {
+    content: "Ingredient:";
+    color: #146EBE;
+    margin-right: 6px;
+}
+
+.search-no-match {
+    display: none;
+}
+
+.search-active .search-result {
+    display: block;
+    color: #146EBE !important;
+}
+
+
 
 /* EXPAND CARDS */
 @media only screen and (max-width: 400px) {
@@ -161,32 +195,6 @@ a {
     }
 }
 
-
-.ingredient {
-    display:none;
-}
-
-.search-active .search-result {
-    display:block;
-    color: #146EBE !important;
-}
-
-.search-result.ingredient::before {
-    content: "Ingredient:";
-    color: #146EBE;
-    margin-right: 6px;
-}
-
-
-
-
-.search-active .recipe-card {
-    display: none;
-}
-
-.search-active .search-result-card {
-    display: flex;
-}
 
 
 
@@ -238,6 +246,10 @@ a {
     color: #bbb;
 }
 
+.theme-dark .search-icon {
+    fill: #bbb;
+}
+
 .theme-dark .search-box:focus-within ::placeholder {
     color: #888;
 }
@@ -246,6 +258,9 @@ a {
     color: #222;
 }
 
+.theme-dark .search-box:focus-within .search-icon {
+    fill: #444
+}
 
 
 @media (prefers-color-scheme: dark) {
@@ -273,8 +288,6 @@ a {
     }
 
 
-
-
     .theme-system .search-box {
         background-color: #444;
     }
@@ -291,12 +304,21 @@ a {
         color: #bbb;
     }
 
+    .theme-system .search-icon {
+        fill: #bbb;
+    }
+
     .theme-system .search-box:focus-within ::placeholder {
         color: #888;
     }
-    
+
     .theme-system .search-box:focus-within .search-input {
         color: #222;
     }
+
+    .theme-system .search-box:focus-within .search-icon {
+        fill: #444
+    }
+    
     
 }

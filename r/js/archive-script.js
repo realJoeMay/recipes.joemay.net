@@ -42,38 +42,40 @@ function search() {
 
     var input = document.querySelector(".search-input").value.toLowerCase();
     var cards = document.querySelectorAll(".recipe-card");
+
+    if (input == "") {
+        document.querySelector("body").classList.remove("search-active")
+    } else {
+        document.querySelector("body").classList.add("search-active")
+    }
     
     // loop through each card
     for (var i = 0; i < cards.length; i++) {
         
-        var searchItems = cards[i].getElementsByClassName("search-target");
-        cards[i].classList.remove("search-result-card");
-        var searchFound = false
+        var searchTargets = cards[i].getElementsByClassName("search-target");
 
         // first clear all search targets
-        for (var j = 0; j < searchItems.length; j++) {
-            searchItems[j].classList.remove("search-result");
+        for (var j = 0; j < searchTargets.length; j++) {
+            searchTargets[j].classList.remove("search-result");
         }
 
         // now check for search
-        for (var j = 0; j < searchItems.length; j++) {
-            var text = searchItems[j].innerText.toLowerCase();
+        var cardMatch = false
+        for (var j = 0; j < searchTargets.length; j++) {
+            var text = searchTargets[j].innerText.toLowerCase();
 
             if (text.includes(input)) {
-                searchItems[j].classList.add("search-result");
-                cards[i].classList.add("search-result-card");
-                break    
+                searchTargets[j].classList.add("search-result");
+                var cardMatch = true
+                break
             }
         }
 
-        // check if the input is empty
-        if (input == "") {
-            document.querySelector("body").classList.remove("search-active")
-            cards[i].classList.remove("search-result");
+        if (cardMatch) {
+            cards[i].classList.remove("search-no-match");
         } else {
-            document.querySelector("body").classList.add("search-active")
+            cards[i].classList.add("search-no-match");
         }
-
 
     }
 }
