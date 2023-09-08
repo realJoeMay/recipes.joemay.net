@@ -101,7 +101,6 @@ a {
         position: relative;
         height: 0;
     }
-
 }
 
 /* EXPAND CARDS */
@@ -115,9 +114,6 @@ a {
         position: fixed;
         
     }
-
-
-
 }
 
 
@@ -125,7 +121,7 @@ a {
 
 .search-box {
     min-width: 250px;
-    max-width: 300px;
+    /* max-width: 300px; */
     padding: 0;
     background: #00000011;
     border-radius: 3px;
@@ -151,6 +147,13 @@ a {
     outline: none;
 }
 
+/* EXPAND CARDS */
+@media only screen and (min-width: 400px) {
+
+    .search-box {
+        max-width: 300px;
+    }
+}
 
 
 .ingredient {
