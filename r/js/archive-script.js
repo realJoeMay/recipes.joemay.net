@@ -44,9 +44,9 @@ function search() {
     var cards = document.querySelectorAll(".recipe-card");
 
     if (input == "") {
-        document.querySelector("body").classList.remove("search-active")
+        document.querySelector("body").classList.remove("search-active");
     } else {
-        document.querySelector("body").classList.add("search-active")
+        document.querySelector("body").classList.add("search-active");
     }
     
     // loop through each card
@@ -79,3 +79,49 @@ function search() {
 
     }
 }
+
+
+function clearSearchInput() {
+    document.querySelector('.search-input').value = '';
+    document.querySelector('body').classList.remove("search-active")
+
+    var cards = document.querySelectorAll(".recipe-card");
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].classList.remove("search-no-match");
+    }
+
+    document.querySelector('.search-input').focus();
+    document.querySelector('.search-input').select();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Keyboard Shortcuts
+document.addEventListener("keydown", function(e) {
+
+    // console.log(e.code);
+    
+    // Press s to select search input
+    if (e.code === "KeyS" && document.activeElement.tagName != "INPUT") {
+        document.querySelector('.search-input').focus();
+        document.querySelector('.search-input').select();
+        e.preventDefault() // Prevent typing into search input
+    }
+
+    // Press escape to clear input
+    if (e.code === "Escape" && document.activeElement.tagName === "INPUT") {
+        clearSearchInput()
+    }
+    
+});
+

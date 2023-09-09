@@ -197,22 +197,22 @@ copyButton.addEventListener("click", function() {
 
 
 // Keyboard Shortcuts
-document.addEventListener("keydown", function(event) {
+document.addEventListener("keydown", function(e) {
 
-    // console.log("event.keyCode: ", event.keyCode );
+    // console.log(e.code );
 
-    // m to open menu
-    if (event.keyCode === 77 || event.key === "m") {
+    // Press m to open menu
+    if (e.code === "KeyM") {
         openMenu()
     }
 
-    // esc to close menu
-    if (event.keyCode === 27) {
+    // Press escape to close menu
+    if (e.code === "Escape") {
         closeMenu()
     }
 
-    // ctrl-d for debug info
-    if (event.ctrlKey && (event.keyCode === 66 || event.key === "b")) {
+    // Press ctrl-d to toggle debug info
+    if (e.ctrlKey && e.code === "KeyB") {
         document.querySelector("body").classList.toggle("show-debug");
     }
     
