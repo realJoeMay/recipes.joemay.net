@@ -194,9 +194,6 @@ a {
     color: #999;
 }
 
-/* .search-icon-x:active {
-    background: red !important;
-} */
 
 
 
@@ -224,17 +221,17 @@ a {
 
 
 
-/* EXPAND CARDS */
+/* SEARCH BOX MOBILE */
 @media only screen and (max-width: 400px) {
 
     .search-box {
         max-width: none;
     }
 
-    .search-input {
+    /* .search-input {
         height: 3rem;
         font-size: 1.4rem;
-    }
+    } */
 }
 
 

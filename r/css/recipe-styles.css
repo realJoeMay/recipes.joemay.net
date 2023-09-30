@@ -314,7 +314,7 @@ body.recipe-page {
 .menu-header {
     color: rgb(55, 53, 47);
     fill: rgb(55, 53, 47);
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     cursor: pointer;
     padding: 0.4rem 0.8rem;
     font-weight: 400;
@@ -589,16 +589,11 @@ body.theme-dark {
 
 
 /* rounded switch */
-.toggle {
+.slider-wrapper {
     position: relative;
     display: inline-block;
     width: 30px;
     height: 18px;
-}
- 
-/* Hide the checkbox input */
-.toggle input {
-    display: none;
 }
  
 /* Describe slider's look and position. */
@@ -610,7 +605,7 @@ body.theme-dark {
     right: 0;
     bottom: 0;
     background-color: gray;
-    transition: .4s;
+    transition: .3s;
     border-radius: 17px;
 }
  
@@ -630,13 +625,13 @@ body.theme-dark {
  
 /* Modify the slider's background color to
       green once the checkbox has been selected. */
-input:checked+.slider {
+.slider.checked {
     background-color: #146EBE;
 }
  
 /* When the checkbox is checked, shift the
       white ball towards the right within the slider. */
-input:checked+.slider:before {
+.slider.checked:before {
     transform: translateX(12px);
 }
   

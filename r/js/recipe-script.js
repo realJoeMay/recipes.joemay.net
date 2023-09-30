@@ -1,3 +1,7 @@
+var pageBody = document.querySelector("body");
+
+
+
 
 // Handling cookies
 
@@ -27,6 +31,7 @@ function getCookie(cname) {
 // Open & Close Menu
 
 function toggleMenu() {
+    console.log('Toggle menu')
     if (document.querySelector("body").classList.contains("menu-open")) {
         closeMenu();
     } else {
@@ -50,7 +55,7 @@ setTimeout(function() {
 
 
 
-// Togggle Menu Item - THEME
+// Togggle Menu Item - Theme
 
 function toggleAppearance() {
     if (document.querySelector("body").classList.contains("menu-appearance-open")) {
@@ -69,7 +74,7 @@ function hideMenuAppearance() {
 }
 
 
-// Togggle Menu Item - DETAILS
+// Togggle Menu item - Ingredient Details
 
 function toggleDetail() {
     if (document.querySelector("body").classList.contains("menu-details-open")) {
@@ -192,10 +197,6 @@ copyButton.addEventListener("click", function() {
 
 
 
-
-
-
-
 // Keyboard Shortcuts
 document.addEventListener("keydown", function(e) {
 
@@ -218,3 +219,112 @@ document.addEventListener("keydown", function(e) {
     
 });
 
+
+
+
+
+
+
+
+
+
+
+var wakeLockButton = document.querySelector("#wake-lock-btn");
+var wakeLockToggle = document.querySelector("#awake-slider");
+
+// wakeLockButton.addEventListener("click", function() {
+//     console.log('hit wake button')
+
+
+//     // if (wakeLockToggle.checked) {
+//     //     console.log('checked')
+//     // } else {
+//     //     console.log('not checked')
+//     // }
+// });
+
+
+
+
+
+// Wake Lock
+
+const wakeButton = document.querySelector('#wake-lock-btn');
+const wakeSlider = document.querySelector('.menu-wake-lock .slider');
+
+// test wake lock support
+let isWakeLockSupported = false;
+if ('wakeLock' in navigator) {
+    console.log('Screen Wake Lock API supported');
+    isWakeLockSupported = true;
+    
+} else {
+    console.log('Wake lock is not supported by this browser');
+    pageBody.classList.add("wake-lock-unsupported")
+}
+
+
+
+
+
+if (isWakeLockSupported) {
+    // create a reference for the wake lock
+    let wakeLock = null;
+
+    // create an async function to request a wake lock
+    const requestWakeLock = async () => {
+        try {
+            wakeLock = await navigator.wakeLock.request('screen');
+            console.log('Wake Lock requested')
+
+            // listen for our release event
+            wakeLock.onrelease = function(ev) {
+                console.log(ev);
+            }
+
+            wakeLock.addEventListener('release', () => {
+                // if wake lock is released
+                console.log('Wake Lock is released');
+            });
+
+        } catch (err) {
+            console.log('wakelock request failed')
+            
+        }
+    }
+
+
+    // if we click our button
+    wakeButton.addEventListener('click', (ev) => {
+        
+        // prevent double trigger on click
+        ev.preventDefault();
+
+        console.log('hit wake button')
+
+        if (pageBody.classList.contains("wake-lock-on")) {
+            pageBody.classList.remove("wake-lock-on")
+            wakeSlider.classList.remove("checked")
+            console.log('Disabling wake lock')
+            wakeLock.release()
+            .then(() => {
+                wakeLock = null;
+            })
+        } else { 
+            pageBody.classList.add("wake-lock-on")
+            wakeSlider.classList.add("checked")
+            console.log('Enabling wake lock')
+            requestWakeLock()
+        }
+    })
+
+    // Reenable wake lock if switching from another tab
+    const handleVisibilityChange = () => {
+        if (wakeLock !== null && document.visibilityState === 'visible') {
+            requestWakeLock();
+        }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+}

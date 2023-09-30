@@ -96,16 +96,6 @@ function clearSearchInput() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // Keyboard Shortcuts
 document.addEventListener("keydown", function(e) {
 
