@@ -323,6 +323,11 @@ body.recipe-page {
     align-items: center;
 }
 
+@media screen and (max-width: 450px) {
+    .menu-header {font-size: 1.2rem;}
+}
+
+
 .menu-header:hover {
     background-color: rgba(55, 53, 47, 0.08);
 }
@@ -358,6 +363,11 @@ body.recipe-page {
     font-style: italic;
     margin-left: 6px;
 }
+
+.wake-lock-unsupported .menu-wake-lock {
+    display: none;
+}
+
 
 /* open menu */
 body.menu-open .menu {
@@ -624,7 +634,7 @@ body.theme-dark {
 }
  
 /* Modify the slider's background color to
-      green once the checkbox has been selected. */
+      once the checkbox has been selected. */
 .slider.checked {
     background-color: #146EBE;
 }

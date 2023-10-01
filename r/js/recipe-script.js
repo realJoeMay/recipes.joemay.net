@@ -275,7 +275,9 @@ if (isWakeLockSupported) {
     const requestWakeLock = async () => {
         try {
             wakeLock = await navigator.wakeLock.request('screen');
-            console.log('Wake Lock requested')
+            wakeSlider.classList.add("checked");
+            pageBody.classList.add("wake-lock-on");
+            console.log('Wake Lock requested');
 
             // listen for our release event
             wakeLock.onrelease = function(ev) {
@@ -284,11 +286,11 @@ if (isWakeLockSupported) {
 
             wakeLock.addEventListener('release', () => {
                 // if wake lock is released
-                console.log('Wake Lock is released');
+                console.log('Wake Lock released');
             });
 
         } catch (err) {
-            console.log('wakelock request failed')
+            console.log('Wake Lock request failed')
             
         }
     }
@@ -300,20 +302,16 @@ if (isWakeLockSupported) {
         // prevent double trigger on click
         ev.preventDefault();
 
-        console.log('hit wake button')
-
         if (pageBody.classList.contains("wake-lock-on")) {
-            pageBody.classList.remove("wake-lock-on")
-            wakeSlider.classList.remove("checked")
-            console.log('Disabling wake lock')
+            // Turn off wake lock
             wakeLock.release()
             .then(() => {
                 wakeLock = null;
+                wakeSlider.classList.remove("checked");
+                pageBody.classList.remove("wake-lock-on");
             })
         } else { 
-            pageBody.classList.add("wake-lock-on")
-            wakeSlider.classList.add("checked")
-            console.log('Enabling wake lock')
+            // Turn on wake lock
             requestWakeLock()
         }
     })
