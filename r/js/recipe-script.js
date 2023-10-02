@@ -32,7 +32,7 @@ function getCookie(cname) {
 
 function toggleMenu() {
     console.log('Toggle menu')
-    if (document.querySelector("body").classList.contains("menu-open")) {
+    if (pageBody.classList.contains("menu-open")) {
         closeMenu();
     } else {
         openMenu();
@@ -40,16 +40,16 @@ function toggleMenu() {
 }
 
 function openMenu() {
-    document.querySelector("body").classList.add("menu-open");
+    pageBody.classList.add("menu-open");
 }
 
 function closeMenu() {
-    document.querySelector("body").classList.remove("menu-open");
+    pageBody.classList.remove("menu-open");
 }
 
-// fix menu slides out on initial load
 setTimeout(function() {
-    document.querySelector("body").classList.remove("loading");
+    // fix menu slides out on initial load
+    pageBody.classList.remove("loading");
 }, 10)
 
 
@@ -58,7 +58,7 @@ setTimeout(function() {
 // Togggle Menu Item - Theme
 
 function toggleAppearance() {
-    if (document.querySelector("body").classList.contains("menu-appearance-open")) {
+    if (pageBody.classList.contains("menu-appearance-open")) {
         hideMenuAppearance();
     } else {
         showMenuAppearance();
@@ -66,18 +66,18 @@ function toggleAppearance() {
 }
 
 function showMenuAppearance() {
-    document.querySelector("body").classList.add("menu-appearance-open");
+    pageBody.classList.add("menu-appearance-open");
 }
 
 function hideMenuAppearance() {
-    document.querySelector("body").classList.remove("menu-appearance-open");
+    pageBody.classList.remove("menu-appearance-open");
 }
 
 
 // Togggle Menu item - Ingredient Details
 
 function toggleDetail() {
-    if (document.querySelector("body").classList.contains("menu-details-open")) {
+    if (pageBody.classList.contains("menu-details-open")) {
         hideMenudetail();
     } else {
         showMenudetail();
@@ -85,11 +85,11 @@ function toggleDetail() {
 }
 
 function showMenudetail() {
-    document.querySelector("body").classList.add("menu-details-open");
+    pageBody.classList.add("menu-details-open");
 }
 
 function hideMenudetail() {
-    document.querySelector("body").classList.remove("menu-details-open");
+    pageBody.classList.remove("menu-details-open");
 }
 
 
@@ -99,24 +99,24 @@ function hideMenudetail() {
 // ingredient details
 
 function detailNone() {
-    document.querySelector("body").classList.remove("show-detail-cost");
-    document.querySelector("body").classList.remove("show-detail-nutrition");
-    document.querySelector("body").classList.remove("show-detail-cost-ps");
+    pageBody.classList.remove("show-detail-cost");
+    pageBody.classList.remove("show-detail-nutrition");
+    pageBody.classList.remove("show-detail-cost-ps");
 }
 
 function detailCost() {
     detailNone()
-    document.querySelector("body").classList.add("show-detail-cost");
+    pageBody.classList.add("show-detail-cost");
 }
 
 function detailCostPerServing() {
     detailNone()
-    document.querySelector("body").classList.add("show-detail-cost-ps");
+    pageBody.classList.add("show-detail-cost-ps");
 }
 
 function detailNutrition() {
     detailNone()
-    document.querySelector("body").classList.add("show-detail-nutrition");
+    pageBody.classList.add("show-detail-nutrition");
 }
 
 
@@ -126,26 +126,26 @@ function detailNutrition() {
 
 function themeDark() {
     clearTheme()
-    document.querySelector("body").classList.add("theme-dark");
+    pageBody.classList.add("theme-dark");
     setCookie("theme", "dark", 365)
 }
 
 function themeLight() {
     clearTheme()
-    document.querySelector("body").classList.add("theme-light");
+    pageBody.classList.add("theme-light");
     setCookie("theme", "light", 365)
 }
 
 function themeSystem() {
     clearTheme()
-    document.querySelector("body").classList.add("theme-system");
+    pageBody.classList.add("theme-system");
     setCookie("theme", "system", 365)
 }
 
 function clearTheme() {
-    document.querySelector("body").classList.remove("theme-dark");
-    document.querySelector("body").classList.remove("theme-light");
-    document.querySelector("body").classList.remove("theme-system");
+    pageBody.classList.remove("theme-dark");
+    pageBody.classList.remove("theme-light");
+    pageBody.classList.remove("theme-system");
 }
 
 function loadPreviousTheme() {
@@ -168,6 +168,7 @@ loadPreviousTheme()
 
 
 // Copy Ingredients
+
 var copyButton = document.querySelector("#copy-ingredients-btn");
 var copyButtonText = document.querySelector("#copy-ingredients-btn-text");
 var textToCopy = document.querySelector("#ingredients-text");
@@ -180,10 +181,10 @@ copyButton.addEventListener("click", function() {
     navigator.clipboard.writeText(copiedText)
         .then(function() {
             // copyButtonText.textContent = "Copied!";
-            document.querySelector("body").classList.add("copied-ingredients");
+            pageBody.classList.add("copied-ingredients");
             setTimeout(function() {
                 // copyButtonText.textContent = "Copy Ingredients";
-                document.querySelector("body").classList.remove("copied-ingredients");
+                pageBody.classList.remove("copied-ingredients");
             }, 3000);
         })
         .catch(function(err) {
@@ -195,53 +196,6 @@ copyButton.addEventListener("click", function() {
 
 
 
-
-
-// Keyboard Shortcuts
-document.addEventListener("keydown", function(e) {
-
-    // console.log(e.code );
-
-    // Press m to open menu
-    if (e.code === "KeyM") {
-        openMenu()
-    }
-
-    // Press escape to close menu
-    if (e.code === "Escape") {
-        closeMenu()
-    }
-
-    // Press ctrl-d to toggle debug info
-    if (e.ctrlKey && e.code === "KeyB") {
-        document.querySelector("body").classList.toggle("show-debug");
-    }
-    
-});
-
-
-
-
-
-
-
-
-
-
-
-var wakeLockButton = document.querySelector("#wake-lock-btn");
-var wakeLockToggle = document.querySelector("#awake-slider");
-
-// wakeLockButton.addEventListener("click", function() {
-//     console.log('hit wake button')
-
-
-//     // if (wakeLockToggle.checked) {
-//     //     console.log('checked')
-//     // } else {
-//     //     console.log('not checked')
-//     // }
-// });
 
 
 
@@ -264,10 +218,8 @@ if ('wakeLock' in navigator) {
 }
 
 
-
-
-
 if (isWakeLockSupported) {
+
     // create a reference for the wake lock
     let wakeLock = null;
 
@@ -302,7 +254,7 @@ if (isWakeLockSupported) {
         // prevent double trigger on click
         ev.preventDefault();
 
-        if (pageBody.classList.contains("wake-lock-on")) {
+        if (wakeLock !== null) {
             // Turn off wake lock
             wakeLock.release()
             .then(() => {
@@ -318,11 +270,61 @@ if (isWakeLockSupported) {
 
     // Reenable wake lock if switching from another tab
     const handleVisibilityChange = () => {
-        if (wakeLock !== null && document.visibilityState === 'visible') {
-            requestWakeLock();
+        console.log('visibilty change handler')
+        if (wakeLock !== null) {
+            // Turn off wake lock
+            wakeLock.release()
+            .then(() => {
+                wakeLock = null;
+                wakeSlider.classList.remove("checked");
+                pageBody.classList.remove("wake-lock-on");
+            })
+            
         }
     }
 
     document.addEventListener('visibilitychange', handleVisibilityChange);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+// Keyboard Shortcuts
+
+document.addEventListener("keydown", function(e) {
+
+    // console.log(e.code );
+
+    // Press m to open menu
+    if (e.code === "KeyM") {
+        openMenu()
+    }
+
+    // Press escape to close menu
+    if (e.code === "Escape") {
+        closeMenu()
+    }
+
+    // Press ctrl-d to toggle debug info
+    if (e.ctrlKey && e.code === "KeyB") {
+        pageBody.classList.toggle("show-debug");
+    }
+    
+});
+
+
+
+
+
+
+
+
+

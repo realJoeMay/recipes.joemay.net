@@ -52,7 +52,8 @@ function search() {
     // loop through each card
     for (var i = 0; i < cards.length; i++) {
         
-        var searchTargets = cards[i].getElementsByClassName("search-target");
+        var searchTargets = cards[i].querySelectorAll(".search-target");
+        var ingredientSearchTargets = cards[i].querySelectorAll(".ingredient.search-target");
 
         // first clear all search targets
         for (var j = 0; j < searchTargets.length; j++) {
@@ -67,6 +68,15 @@ function search() {
             if (text.includes(input)) {
                 searchTargets[j].classList.add("search-result");
                 var cardMatch = true
+
+                // Set order
+                if (searchTargets[j].classList.contains('recipe-title')) {
+                    cards[i].style.order = 1
+                } else if (searchTargets[j].classList.contains('recipe-subtitle')) {
+                    cards[i].style.order = 2
+                } else if (searchTargets[j].classList.contains('ingredient')) {
+                    cards[i].style.order = 5
+                }
                 break
             }
         }

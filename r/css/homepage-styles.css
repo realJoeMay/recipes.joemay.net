@@ -36,6 +36,8 @@ a {
 .recipe-cards {
     min-width: 65%;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .recipe-card {
@@ -200,18 +202,35 @@ a {
 
 /* search results */
 
+/* default state */
+/* .search-card {
+    display: none;
+} */
+
 .ingredient {
     display:none;
 }
+
+
+/* search active */
+/* .search-active .display-card {
+    display: none;
+}
+
+.search-active .search-card {
+    display: flex;
+} */
+
+.search-active .search-no-match {
+    display: none;
+}
+
+
 
 .ingredient::before {
     content: "Ingredient:";
     color: #146EBE;
     margin-right: 6px;
-}
-
-.search-no-match {
-    display: none;
 }
 
 .search-active .search-result {
