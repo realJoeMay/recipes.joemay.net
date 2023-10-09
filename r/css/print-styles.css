@@ -11,7 +11,7 @@ body {
 
 .print-page {
     margin: 0 auto;
-    padding: 5px;
+    padding: 0 5px 5px 5px;
     max-width: 1200px;
 }
 
@@ -80,4 +80,19 @@ h3 {
 
 .step-number {
     font-weight: bold;
+}
+
+.footer {
+    border-top: 2px solid #e2e2e2;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.recipe-qr img {
+    width: 100px;
+}
+
+.recipe-url {
+    position: relative;
+    left: 10px;
 }
