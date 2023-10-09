@@ -64,6 +64,10 @@ h3 {
     width: 35%;
 }
 
+.ingredients-column:empty {
+    width: 0;
+}
+
 .steps-column {
     width: calc(65% - 30px);
 }
