@@ -715,7 +715,7 @@ body.theme-dark {
                                 <div class="menu-button button-detail-nutrition" onclick="detailNutrition()">
                                     <span style="margin-top:-3px;">Nutrition</span>
                                     <span style="font-size:0.8rem;">per serving</span>
-                               </div>
+                                </div>
     </form>
 </div><div class="menu-section-break"></div><div class='menu-copy-ingredients scale scale-1-x'>
     <h3 class='menu-header menu-item'>
@@ -789,9 +789,9 @@ body.theme-dark {
                     <span class='description-label'>Cost:</span>
                     <span class='description-value'><span class='scale scale-1-x'>$4.70</span></span>
                 </div>
-                <div class='scale scale-1-x'>
-                    <span class='description-label'>Nutrition per serving</span>
-                    <span class='description-value'><div class="nutrition">
+                    <div class='scale scale-1-x'>
+                        <span class='description-label'>Nutrition per serving</span>
+                        <span class='description-value'><div class="nutrition">
     <div class="calories value">555</div>
     <div class="calories label">Calories</div>
     <div class="calories value">54g</div>
@@ -801,7 +801,7 @@ body.theme-dark {
     <div class="calories value">9g</div>
     <div class="protein label">protein</div>
 </div></span>
-                </div>
+                    </div>
                 </div></div>
                 
             <div class="scale scale-1-x">
@@ -1113,24 +1113,36 @@ setTimeout(function() {
 
 
 // ingredient details
-let buttonDetailNone = document.querySelector(".button-detail-none");
-let buttonDetailCost = document.querySelector(".button-detail-cost");
-let buttonDetailCostPer = document.querySelector(".button-detail-cost-ps");
-let buttonDetailNutrition = document.querySelector(".button-detail-nutrition");
+const buttonDetailNone = document.querySelector(".button-detail-none");
+const buttonDetailCost = document.querySelector(".button-detail-cost");
+const buttonDetailCostPer = document.querySelector(".button-detail-cost-ps");
+const buttonDetailNutrition = document.querySelector(".button-detail-nutrition");
 
 function detailClear() {
     pageBody.classList.remove("show-detail-cost");
     pageBody.classList.remove("show-detail-cost-ps");
     pageBody.classList.remove("show-detail-nutrition");
-    buttonDetailNone.classList.remove("selected");
-    buttonDetailCost.classList.remove("selected");
-    buttonDetailCostPer.classList.remove("selected");
-    buttonDetailNutrition.classList.remove("selected");
+    
+    if (buttonDetailNone  !== null ) {
+        buttonDetailNone.classList.remove("selected");
+    }
+    if (buttonDetailCost  !== null ) {
+        buttonDetailCost.classList.remove("selected");
+    }
+    if (buttonDetailCostPer  !== null ) {
+        buttonDetailCostPer.classList.remove("selected");
+    }
+    if (buttonDetailNutrition  !== null ) {
+        buttonDetailNutrition.classList.remove("selected");
+    }
 }
 
 function detailNone() {
     detailClear();
-    buttonDetailNone.classList.add("selected");
+    if (buttonDetailNone  !== null ) {
+        buttonDetailNone.classList.add("selected");
+    }
+
 }
 
 function detailCost() {
