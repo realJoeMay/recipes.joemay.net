@@ -8,7 +8,9 @@
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
         <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' rel='stylesheet'>
         <link rel='icon' type='image/x-icon' href='r/images/icon.png'>
-        <style>html {
+        <style>
+        
+html {
     background: #f6f6f6;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -42,7 +44,8 @@ a {
 }
 
 
-/* RECIPE CARDS */
+/* CARDS */
+
 .recipe-cards {
     min-width: 65%;
     padding: 0 10px;
@@ -85,7 +88,6 @@ a {
     font-size: 1.75rem;
     font-weight: 600;
     color: #333;
-    /* white-space: nowrap; */
     line-height: 1;
 }
 
@@ -96,7 +98,8 @@ a {
 }
 
 
-/* STACK FILTERS AND CARDS */
+/* COLLAPSE ON SMALL SCREEN */
+
 @media only screen and (min-width: 600px) {
 
     .filters {
@@ -117,7 +120,9 @@ a {
     }
 }
 
+
 /* EXPAND CARDS */
+
 @media only screen and (min-width: 800px) {
 
     .content {
@@ -207,35 +212,15 @@ a {
 }
 
 
-
-
-
-/* search results */
-
-/* default state */
-/* .search-card {
-    display: none;
-} */
+/* SEARCH RESULTS */
 
 .ingredient {
     display:none;
 }
 
-
-/* search active */
-/* .search-active .display-card {
-    display: none;
-}
-
-.search-active .search-card {
-    display: flex;
-} */
-
 .search-active .search-no-match {
     display: none;
 }
-
-
 
 .ingredient::before {
     content: "Ingredient:";
@@ -249,8 +234,8 @@ a {
 }
 
 
-
 /* SEARCH BOX MOBILE */
+
 @media only screen and (max-width: 400px) {
 
     .search-box {
@@ -262,14 +247,6 @@ a {
         font-size: 1.4rem;
     } */
 }
-
-
-
-
-
-
-
-
 
 
 /* DARK THEME */
@@ -406,7 +383,10 @@ a {
     .theme-system .search-box:focus-within .search-icon-x:hover {
         background-color: #aaa;
     }
-}</style>
+}
+        
+        
+        </style>
     </head>
     <body class='archive'>
         <div class='content'>
@@ -425,14 +405,67 @@ a {
                 </div>
             </div>
             <main class='recipe-cards'>
-                <a class="recipe-card" href="./baked-potatoes">
+                <a class="recipe-card" href="./chili">
     <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./baked-potatoes/baked-potato-960x540.jpg);"></div>
+        <div class="recipe-image" style="background-image:url(./chili/chili_16x9.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">JM Chili</h2>
+        <h3 class="recipe-subtitle search-target">it's pretty good</h3>
+
+        
+        <div class="search-target ingredient">Ground Beef</div>
+        
+        <div class="search-target ingredient">Ground Sweet Italian Sausage</div>
+        
+        <div class="search-target ingredient">Red Kidney Beans</div>
+        
+        <div class="search-target ingredient">Diced Tomatoes</div>
+        
+        <div class="search-target ingredient">Tomato Paste</div>
+        
+        <div class="search-target ingredient">Sweet Onion</div>
+        
+        <div class="search-target ingredient">Red Bell Peppers</div>
+        
+        <div class="search-target ingredient">Better Than Bouillon Beef</div>
+        
+        <div class="search-target ingredient">Worcestershire Sauce</div>
+        
+        <div class="search-target ingredient">Beer</div>
+        
+        <div class="search-target ingredient">Frozen Corn</div>
+        
+        <div class="search-target ingredient">Chili Powder</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Cayenne</div>
+        
+        <div class="search-target ingredient">Cumin</div>
+        
+        <div class="search-target ingredient">Paprika</div>
+        
+        <div class="search-target ingredient">Oregano</div>
+        
+        <div class="search-target ingredient">Basil</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./baked-potato">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./baked-potato/baked-potato-960x540.jpg);"></div>
     </div>
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Baked Potato</h2>
         <h3 class="recipe-subtitle search-target">via instant pot</h3>
+
         
+
     </div>
 </a><a class="recipe-card" href="./burgers">
     <div class="recipe-image-area">
@@ -441,7 +474,33 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Balsamic Onion Burgers</h2>
         <h3 class="recipe-subtitle search-target">with crispy cauliflower</h3>
-        <div class="search-target ingredient">Ground Beef</div><div class="search-target ingredient">Cauliflower</div><div class="search-target ingredient">Red Onions</div><div class="search-target ingredient">Brioche Buns</div><div class="search-target ingredient">Panko Breadcrumbs</div><div class="search-target ingredient">Balsamic Vinegar</div><div class="search-target ingredient">Mayonnaise</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Oregano</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
+
+        
+        <div class="search-target ingredient">Ground Beef</div>
+        
+        <div class="search-target ingredient">Cauliflower</div>
+        
+        <div class="search-target ingredient">Red Onions</div>
+        
+        <div class="search-target ingredient">Brioche Buns</div>
+        
+        <div class="search-target ingredient">Panko Breadcrumbs</div>
+        
+        <div class="search-target ingredient">Balsamic Vinegar</div>
+        
+        <div class="search-target ingredient">Mayonnaise</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Oregano</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./chicken-cauliflower">
     <div class="recipe-image-area">
@@ -450,7 +509,23 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Chicken and Cauliflower</h2>
         <h3 class="recipe-subtitle search-target">and wild rice</h3>
-        <div class="search-target ingredient">Chicken Thighs</div><div class="search-target ingredient">Cauliflower</div><div class="search-target ingredient">Wild Rice</div><div class="search-target ingredient">Thyme</div><div class="search-target ingredient">Italian Seasoning</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
+
+        
+        <div class="search-target ingredient">Chicken Thighs</div>
+        
+        <div class="search-target ingredient">Cauliflower</div>
+        
+        <div class="search-target ingredient">Wild Rice</div>
+        
+        <div class="search-target ingredient">Thyme</div>
+        
+        <div class="search-target ingredient">Italian Seasoning</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./chicken-sausage">
     <div class="recipe-image-area">
@@ -459,16 +534,39 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Chicken and Sausage</h2>
         <h3 class="recipe-subtitle search-target">and rice</h3>
-        <div class="search-target ingredient">Chicken Thighs</div><div class="search-target ingredient">Ground Sweet Italian Sausage</div><div class="search-target ingredient">Sweet Onion</div><div class="search-target ingredient">Red Bell Pepper</div><div class="search-target ingredient">Jasmine Rice</div><div class="search-target ingredient">Grape Tomatoes</div><div class="search-target ingredient">Green Onions</div><div class="search-target ingredient">Chicken Stock</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">White Wine</div><div class="search-target ingredient">Paprika</div><div class="search-target ingredient">Garlic Powder</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
-    </div>
-</a><a class="recipe-card" href="./chili">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./chili/chili_16x9.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">JM Chili</h2>
-        <h3 class="recipe-subtitle search-target">it's pretty good</h3>
-        <div class="search-target ingredient">Ground Beef</div><div class="search-target ingredient">Ground Sweet Italian Sausage</div><div class="search-target ingredient">Red Kidney Beans</div><div class="search-target ingredient">Diced Tomatoes</div><div class="search-target ingredient">Tomato Paste</div><div class="search-target ingredient">Sweet Onion</div><div class="search-target ingredient">Red Bell Peppers</div><div class="search-target ingredient">Better Than Bouillon Beef</div><div class="search-target ingredient">Worcestershire Sauce</div><div class="search-target ingredient">Beer</div><div class="search-target ingredient">Frozen Corn</div><div class="search-target ingredient">Chili Powder</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Cayenne</div><div class="search-target ingredient">Cumin</div><div class="search-target ingredient">Paprika</div><div class="search-target ingredient">Oregano</div><div class="search-target ingredient">Basil</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
+
+        
+        <div class="search-target ingredient">Chicken Thighs</div>
+        
+        <div class="search-target ingredient">Ground Sweet Italian Sausage</div>
+        
+        <div class="search-target ingredient">Sweet Onion</div>
+        
+        <div class="search-target ingredient">Red Bell Pepper</div>
+        
+        <div class="search-target ingredient">Jasmine Rice</div>
+        
+        <div class="search-target ingredient">Grape Tomatoes</div>
+        
+        <div class="search-target ingredient">Green Onions</div>
+        
+        <div class="search-target ingredient">Chicken Stock</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">White Wine</div>
+        
+        <div class="search-target ingredient">Paprika</div>
+        
+        <div class="search-target ingredient">Garlic Powder</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./french-toast">
     <div class="recipe-image-area">
@@ -477,7 +575,21 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">French Toast</h2>
         <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Eggs</div><div class="search-target ingredient">Milk</div><div class="search-target ingredient">Vanilla Extract</div><div class="search-target ingredient">Cinnamon</div><div class="search-target ingredient">Brioche Bread</div><div class="search-target ingredient">Maple Syrup</div>
+
+        
+        <div class="search-target ingredient">Eggs</div>
+        
+        <div class="search-target ingredient">Milk</div>
+        
+        <div class="search-target ingredient">Vanilla Extract</div>
+        
+        <div class="search-target ingredient">Cinnamon</div>
+        
+        <div class="search-target ingredient">Brioche Bread</div>
+        
+        <div class="search-target ingredient">Maple Syrup</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./guacamole">
     <div class="recipe-image-area">
@@ -486,25 +598,27 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Guacamole</h2>
         <h3 class="recipe-subtitle search-target">with stuff in it</h3>
-        <div class="search-target ingredient">Avocados</div><div class="search-target ingredient">Tomatoes</div><div class="search-target ingredient">Sweet Onion</div><div class="search-target ingredient">Cilantro</div><div class="search-target ingredient">Lime</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Cayenne</div><div class="search-target ingredient">Cumin</div><div class="search-target ingredient">Salt</div>
-    </div>
-</a><a class="recipe-card" href="./jm-steak">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./jm-steak/jm-steak-16x9.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">JM Steak</h2>
-        <h3 class="recipe-subtitle search-target">with baked potato and zucchini</h3>
-        <div class="search-target ingredient">Sirloin Steak</div><div class="search-target ingredient">Golden Potatoes</div><div class="search-target ingredient">Sweet Onions</div><div class="search-target ingredient">Zucchini</div><div class="search-target ingredient">Yellow Squash</div><div class="search-target ingredient">Parmesan Cheese</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Butter</div><div class="search-target ingredient">Thyme</div><div class="search-target ingredient">Garlic Powder</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
-    </div>
-</a><a class="recipe-card" href="./meatballs">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./meatballs/meatballs-960x540.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Meatballs</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Ground Beef</div><div class="search-target ingredient">Ground Pork</div><div class="search-target ingredient">Eggs</div><div class="search-target ingredient">Milk</div><div class="search-target ingredient">Sweet Onion</div><div class="search-target ingredient">Parmesan Cheese</div><div class="search-target ingredient">Panko Breadcrumbs</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Worcestershire Sauce</div><div class="search-target ingredient">Italian Seasoning</div><div class="search-target ingredient">Oregano</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
+
+        
+        <div class="search-target ingredient">Avocados</div>
+        
+        <div class="search-target ingredient">Tomatoes</div>
+        
+        <div class="search-target ingredient">Sweet Onion</div>
+        
+        <div class="search-target ingredient">Cilantro</div>
+        
+        <div class="search-target ingredient">Lime</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Cayenne</div>
+        
+        <div class="search-target ingredient">Cumin</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./beef">
     <div class="recipe-image-area">
@@ -513,7 +627,31 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Roast Beef</h2>
         <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Top Round Roast</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Water</div><div class="search-target ingredient">Beef Broth</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div><div class="search-target ingredient">Thyme</div><div class="search-target ingredient">Basil</div><div class="search-target ingredient">Tarragon</div><div class="search-target ingredient">Rosemary</div>
+
+        
+        <div class="search-target ingredient">Top Round Roast</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Water</div>
+        
+        <div class="search-target ingredient">Beef Broth</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+        <div class="search-target ingredient">Thyme</div>
+        
+        <div class="search-target ingredient">Basil</div>
+        
+        <div class="search-target ingredient">Tarragon</div>
+        
+        <div class="search-target ingredient">Rosemary</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./pork-tenderloin">
     <div class="recipe-image-area">
@@ -522,61 +660,29 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Roasted Pork Tenderloin</h2>
         <h3 class="recipe-subtitle search-target">with potatoes and zucchini</h3>
-        <div class="search-target ingredient">Pork Tenderloin</div><div class="search-target ingredient">Baby Yellow Potatoes</div><div class="search-target ingredient">Red Onion</div><div class="search-target ingredient">Zucchini</div><div class="search-target ingredient">Lemon</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Butter</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
-    </div>
-</a><a class="recipe-card" href="./sheet-pan-chicken">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./sheet-pan-chicken/Sheet-Pan-Chicken-with-Vegetables-16x9.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Sheet Pan Chicken</h2>
-        <h3 class="recipe-subtitle search-target">with rainbow vegetables</h3>
-        <div class="search-target ingredient">Chicken Thighs</div><div class="search-target ingredient">Sweet Potatoes</div><div class="search-target ingredient">Red Bell Pepper</div><div class="search-target ingredient">Zucchini</div><div class="search-target ingredient">Yellow Squash</div><div class="search-target ingredient">Lemon</div><div class="search-target ingredient">Parmesan Cheese</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Italian Seasoning</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
-    </div>
-</a><a class="recipe-card" href="./smoothie">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./dog_720x540.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Smoothie</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Banana</div><div class="search-target ingredient">Frozen Blueberries</div><div class="search-target ingredient">Milk</div><div class="search-target ingredient">Chocolate Whey</div>
-    </div>
-</a><a class="recipe-card" href="./creamy-chicken">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./creamy-chicken/Creamy-Garlic-Chicken-960x540.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Creamy Garlic Chicken</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Boneless Skinless Chicken Breast</div><div class="search-target ingredient">Flour</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Garlic Powder</div><div class="search-target ingredient">Black Pepper</div><div class="search-target ingredient">Olive Oil</div><div class="search-target ingredient">Butter</div><div class="search-target ingredient">Sweet Onion</div><div class="search-target ingredient">Minced Garlic</div><div class="search-target ingredient">Chicken Broth</div><div class="search-target ingredient">Heavy Cream</div><div class="search-target ingredient">Parmesan Cheese</div><div class="search-target ingredient">Fettuccine</div>
-    </div>
-</a><a class="recipe-card" href="./hash">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./hash/breakfast-hash-960x540.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Breakfast Hash</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Eggs</div><div class="search-target ingredient">yellow onion</div><div class="search-target ingredient">red bell pepper</div><div class="search-target ingredient">shredded hash browns</div><div class="search-target ingredient">Breakfast Sausage</div><div class="search-target ingredient">cheddar cheese</div><div class="search-target ingredient">butter</div><div class="search-target ingredient">Salt</div><div class="search-target ingredient">Black Pepper</div>
-    </div>
-</a><a class="recipe-card" href="./green-bean-casserole">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./green-bean-casserole/green-bean-casserole-960x540.png);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Green Bean Casserole</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">Cream of Mushroom Soup</div><div class="search-target ingredient">milk</div><div class="search-target ingredient">cut Green Beans</div><div class="search-target ingredient">French Fried Onions </div><div class="search-target ingredient">black pepper</div>
-    </div>
-</a><a class="recipe-card" href="./tortillas">
-    <div class="recipe-image-area">
-        <div class="recipe-image" style="background-image:url(./tortillas/tortillas-960x540.jpg);"></div>
-    </div>
-    <div class="recipe-title-area">
-        <h2 class="recipe-title search-target">Flour Tortillas</h2>
-        <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">all-purpose flour</div><div class="search-target ingredient">salt</div><div class="search-target ingredient">baking powder</div><div class="search-target ingredient">extra virgin olive oil</div><div class="search-target ingredient">warm water</div>
+
+        
+        <div class="search-target ingredient">Pork Tenderloin</div>
+        
+        <div class="search-target ingredient">Baby Yellow Potatoes</div>
+        
+        <div class="search-target ingredient">Red Onion</div>
+        
+        <div class="search-target ingredient">Zucchini</div>
+        
+        <div class="search-target ingredient">Lemon</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Butter</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
     </div>
 </a><a class="recipe-card" href="./chocolate-cookies">
     <div class="recipe-image-area">
@@ -585,12 +691,270 @@ a {
     <div class="recipe-title-area">
         <h2 class="recipe-title search-target">Double Chocolate Chip Cookies</h2>
         <h3 class="recipe-subtitle search-target"></h3>
-        <div class="search-target ingredient">all-purpose flour</div><div class="search-target ingredient">natural unsweetened cocoa powder</div><div class="search-target ingredient">baking soda</div><div class="search-target ingredient">salt</div><div class="search-target ingredient">butter</div><div class="search-target ingredient">light brown sugar</div><div class="search-target ingredient">granulated sugar</div><div class="search-target ingredient">large egg</div><div class="search-target ingredient">vanilla extract</div><div class="search-target ingredient">semisweet chocolate chips</div>
+
+        
+        <div class="search-target ingredient">all-purpose flour</div>
+        
+        <div class="search-target ingredient">natural unsweetened cocoa powder</div>
+        
+        <div class="search-target ingredient">baking soda</div>
+        
+        <div class="search-target ingredient">salt</div>
+        
+        <div class="search-target ingredient">butter</div>
+        
+        <div class="search-target ingredient">light brown sugar</div>
+        
+        <div class="search-target ingredient">granulated sugar</div>
+        
+        <div class="search-target ingredient">large egg</div>
+        
+        <div class="search-target ingredient">vanilla extract</div>
+        
+        <div class="search-target ingredient">semisweet chocolate chips</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./tortillas">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./tortillas/tortillas-960x540.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Flour Tortillas</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">all-purpose flour</div>
+        
+        <div class="search-target ingredient">salt</div>
+        
+        <div class="search-target ingredient">baking powder</div>
+        
+        <div class="search-target ingredient">extra virgin olive oil</div>
+        
+        <div class="search-target ingredient">warm water</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./green-bean-casserole">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./green-bean-casserole/green-bean-casserole-960x540.png);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Green Bean Casserole</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">Cream of Mushroom Soup</div>
+        
+        <div class="search-target ingredient">Milk</div>
+        
+        <div class="search-target ingredient">Cut Green Beans</div>
+        
+        <div class="search-target ingredient">French Fried Onions </div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./breakfast-hash">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./breakfast-hash/hash.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Breakfast Hash</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">Eggs</div>
+        
+        <div class="search-target ingredient">yellow onion</div>
+        
+        <div class="search-target ingredient">red bell pepper</div>
+        
+        <div class="search-target ingredient">shredded hash browns</div>
+        
+        <div class="search-target ingredient">Breakfast Sausage</div>
+        
+        <div class="search-target ingredient">cheddar cheese</div>
+        
+        <div class="search-target ingredient">butter</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./creamy-chicken">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./creamy-chicken/Creamy-Garlic-Chicken-960x540.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Creamy Garlic Chicken</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">Boneless Skinless Chicken Breast</div>
+        
+        <div class="search-target ingredient">Flour</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Garlic Powder</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Butter</div>
+        
+        <div class="search-target ingredient">Sweet Onion</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Chicken Broth</div>
+        
+        <div class="search-target ingredient">Heavy Cream</div>
+        
+        <div class="search-target ingredient">Parmesan Cheese</div>
+        
+        <div class="search-target ingredient">Fettuccine</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./meatballs">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./meatballs/meatballs.jpeg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Meatballs</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">Ground Beef</div>
+        
+        <div class="search-target ingredient">Ground Pork</div>
+        
+        <div class="search-target ingredient">Eggs</div>
+        
+        <div class="search-target ingredient">Milk</div>
+        
+        <div class="search-target ingredient">Sweet Onion</div>
+        
+        <div class="search-target ingredient">Parmesan Cheese</div>
+        
+        <div class="search-target ingredient">Panko Breadcrumbs</div>
+        
+        <div class="search-target ingredient">Minced Garlic</div>
+        
+        <div class="search-target ingredient">Worcestershire Sauce</div>
+        
+        <div class="search-target ingredient">Italian Seasoning</div>
+        
+        <div class="search-target ingredient">Oregano</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./sheet-pan-chicken">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./sheet-pan-chicken/Sheet-Pan-Chicken-with-Vegetables-16x9.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Sheet Pan Chicken</h2>
+        <h3 class="recipe-subtitle search-target">with rainbow vegetables</h3>
+
+        
+        <div class="search-target ingredient">Chicken Thighs</div>
+        
+        <div class="search-target ingredient">Sweet Potatoes</div>
+        
+        <div class="search-target ingredient">Red Bell Pepper</div>
+        
+        <div class="search-target ingredient">Zucchini</div>
+        
+        <div class="search-target ingredient">Yellow Squash</div>
+        
+        <div class="search-target ingredient">Lemon</div>
+        
+        <div class="search-target ingredient">Parmesan Cheese</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Italian Seasoning</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./chocolate-smoothie">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./dog_720x540.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">Smoothie</h2>
+        <h3 class="recipe-subtitle search-target"></h3>
+
+        
+        <div class="search-target ingredient">Banana</div>
+        
+        <div class="search-target ingredient">Frozen Blueberries</div>
+        
+        <div class="search-target ingredient">Milk</div>
+        
+        <div class="search-target ingredient">Chocolate Whey</div>
+        
+
+    </div>
+</a><a class="recipe-card" href="./jm-steak">
+    <div class="recipe-image-area">
+        <div class="recipe-image" style="background-image:url(./jm-steak/jm-steak-16x9.jpg);"></div>
+    </div>
+    <div class="recipe-title-area">
+        <h2 class="recipe-title search-target">JM Steak</h2>
+        <h3 class="recipe-subtitle search-target">with baked potato and zucchini</h3>
+
+        
+        <div class="search-target ingredient">Sirloin Steak</div>
+        
+        <div class="search-target ingredient">Golden Potatoes</div>
+        
+        <div class="search-target ingredient">Sweet Onions</div>
+        
+        <div class="search-target ingredient">Zucchini</div>
+        
+        <div class="search-target ingredient">Yellow Squash</div>
+        
+        <div class="search-target ingredient">Parmesan Cheese</div>
+        
+        <div class="search-target ingredient">Olive Oil</div>
+        
+        <div class="search-target ingredient">Butter</div>
+        
+        <div class="search-target ingredient">Thyme</div>
+        
+        <div class="search-target ingredient">Garlic Powder</div>
+        
+        <div class="search-target ingredient">Salt</div>
+        
+        <div class="search-target ingredient">Black Pepper</div>
+        
+
     </div>
 </a>
             </main>
         </div>
-        <script>// Handling cookies
+        <script>
+
+
+// cookies
+
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -628,7 +992,7 @@ checkTheme()
 
 
 
-// Search Recipes
+// Search
 
 function search() {
 
@@ -682,7 +1046,6 @@ function search() {
     }
 }
 
-
 function clearSearchInput() {
     document.querySelector('.search-input').value = '';
     document.querySelector('body').classList.remove("search-active")
@@ -697,8 +1060,8 @@ function clearSearchInput() {
 }
 
 
-
 // Keyboard Shortcuts
+
 document.addEventListener("keydown", function(e) {
 
     // console.log(e.code);
@@ -717,6 +1080,7 @@ document.addEventListener("keydown", function(e) {
     
 });
 
-</script>
+
+        </script>
     </body>
 </html>
