@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../icon.png">
     <style>
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -29,6 +30,19 @@ a, a:visited {
         padding: 0;
     }
 }
+
+
+/* SCALE */
+
+.scale {
+  display: none;
+}
+
+
+.show-scale-1-x .scale-1-x {
+  display: block;
+}
+
 
 
 /* MENU */
@@ -238,7 +252,6 @@ a, a:visited {
     padding: 6px 10px;
     margin-top: 0;
     margin-bottom: 0;
-    align
 }
 
 .menu-item:hover {
@@ -396,104 +409,125 @@ h3 {
     display: none;
 }
 
+    </style>
+    </head>
+    <body class="show-scale-1-x">
+
+        <div class="menu hide-from-print">
+
+            <div class='menu-recipe-link'>
+                <a class='menu-header menu-item' href="../">« Back to Recipe</a>
+            </div>
+    
+            <div class="menu-section-break"></div>
+    
+            
+    
+            
+            <div class='menu-show-image' onclick="toggleImage()">
+                <div class='menu-header menu-item'>
+                    <span class='menu-text'>Show image</span>
+                    <div class="slider-wrapper">
+                        <span class="slider checked"></span>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class='menu-show-qr' onclick="toggleQR()">
+                <div class='menu-header menu-item'>
+                    <span class='menu-text'>Show QR code</span>
+                    <div class="slider-wrapper">
+                        <span class="slider checked"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu-section-break"></div>
+    
+            <div class='menu-print' onclick="window.print()">
+                <div class='menu-header menu-item'>
+                    <span class='menu-icon icon-wrapper'><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></span>
+                    <span class='menu-text'>Print</span>
+                </div>
+            </div>
+    
+        </div><!-- menu -->
 
 
-                .show-scale-1-x .scale-1-x {
-                    display: block;
-                }</style>
-</head>
-<body class="show-scale-1-x ">
-    <div class="menu hide-from-print">
+        <div class="print-page">
+            <div class="site-title">JMRecipes</div>
+            <div class="header">
+                <div class="title-area">
+                    <h1>Green Bean Casserole</h1>
+                    <h3></h3>    
+                </div>
+                
+                
+                <img class="recipe-image" src="../green-bean-casserole-960x540.png">
+                
+    
+            </div>
+            <div class="columns">
+                
 
-        <div class='menu-recipe-link'>
-            <a class='menu-header menu-item' href="..">« Back to Recipe</a>
-        </div>
+                
+                <div class="scale scale-1-x ingredients-column">
+                    
+                    <h2 class='ingredient-list-name'>Ingredients</h2>
+                    
+                    <div class="ingredient">1 (10 1/2 oz) can Cream of Mushroom Soup, </div>
+                    
+                    <div class="ingredient">¾ cup Milk, </div>
+                    
+                    <div class="ingredient">2 (14 1/2 oz) cans Cut Green Beans, drained</div>
+                    
+                    <div class="ingredient">1⅓ cups French Fried Onions , divided</div>
+                    
+                    <div class="ingredient">⅛ tsp Black Pepper, </div>
+                    
+                    
+                </div>
+                
 
-        <div class="menu-section-break"></div>
-
+                
+                <div class="scale scale-1-x steps-column">
+                    <h2 class='ingredient-list-name'>Instructions</h2>
+                    
+                    
+                    <div class='step'>
+                        <div class='step-number'>1</div>
+                        <div class='step-text'>How to Make Green Bean Casserole:Preheat oven to 350°F. Mix soup, milk and pepper in 1 1/2-quart baking dish. Stir in green beans and 2/3 cup Crispy Fried Onions.</div>
+                    </div>
+                    
+                    <div class='step'>
+                        <div class='step-number'>2</div>
+                        <div class='step-text'>Bake 30 minutes or until hot. Stir.</div>
+                    </div>
+                    
+                    <div class='step'>
+                        <div class='step-number'>3</div>
+                        <div class='step-text'>Top with remaining 2/3 cup onions. Bake 5 minutes longer.</div>
+                    </div>
+                    
         
 
-        <div class='menu-show-image' onclick="toggleImage()">
-            <div class='menu-header menu-item'>
-                <span class='menu-text'>Show image</span>
-                <div class="slider-wrapper">
-                    <span class="slider checked"></span>
                 </div>
-            </div>
-        </div>
+                
 
-        <div class='menu-show-qr' onclick="toggleQR()">
-            <div class='menu-header menu-item'>
-                <span class='menu-text'>Show QR code</span>
-                <div class="slider-wrapper">
-                    <span class="slider checked"></span>
-                </div>
-            </div>
-        </div>
+                
+            </div><!-- columns -->
 
-        <div class="menu-section-break"></div>
-
-        <div class='menu-print' onclick="window.print()">
-            <div class='menu-header menu-item'>
-                <span class='menu-icon icon-wrapper'>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
-                </span>
-                <span class='menu-text'>Print</span>
-            </div>
-        </div>
-
-    </div><!-- menu -->
-
-    <div class="print-page">
-        <div class="site-title">JMRecipes</div>
-        <div class="header">
-            <div class="title-area">
-                <h1>Green Bean Casserole</h1>
-                <h3></h3>    
+            <div class="footer">
+                <div class="recipe-url">https://recipes.joemay.net/green-bean-casserole</div>
+                <div class="recipe-qr"><img src="../recipe-qr.png"></div>
             </div>
 
-            <img class="recipe-image" src="../green-bean-casserole-960x540.png">
-
-        </div>
-        <div class="columns">
-            
-                <div class="ingredients-column">
-                    
-            <div class="scale scale-1-x">
-                <div class="recipe-box recipe-box-ingredients">
-                    <h2 class='ingredient-list-name'>Ingredients</h2><div class="ingredient">1 (10 1/2 oz) can Cream of Mushroom Soup, </div><div class="ingredient">¾ cup milk, </div><div class="ingredient">2 (14 1/2 oz) cans cut Green Beans, drained</div><div class="ingredient">1⅓ cups French Fried Onions , divided</div><div class="ingredient">⅛ tsp black pepper, </div>
-                </div>
-            </div>
-                </div>
-            
-                <div class="steps-column">
-                    
-            <div class="scale scale-1-x">
-                <div class="recipe-box">
-                    <h2 class="box-title">Instructions</h2>
-            <div class='step'>
-                <div class='step-number'>1</div>
-                <div class='step-text'>How to Make Green Bean Casserole:Preheat oven to 350°F. Mix soup, milk and pepper in 1 1/2-quart baking dish. Stir in green beans and 2/3 cup Crispy Fried Onions.</div>
-            </div>
-            <div class='step'>
-                <div class='step-number'>2</div>
-                <div class='step-text'>Bake 30 minutes or until hot. Stir.</div>
-            </div>
-            <div class='step'>
-                <div class='step-number'>3</div>
-                <div class='step-text'>Top with remaining 2/3 cup onions. Bake 5 minutes longer.</div>
-            </div>
-                </div>
-            </div>
-                </div>
-        </div>
-        <div class="footer">
-            <div class="recipe-url">https://recipes.joemay.net/green-bean-casserole</div>
-            <div class="recipe-qr"><img src="../recipe-qr.png"></div>
-        </div>
-    </div>
-
-    <script>var pageBody = document.querySelector("body");
+        </div><!-- print page -->
+        
+        <script>
+        
+var pageBody = document.querySelector("body");
 
 
 // Menu - Scale
@@ -511,7 +545,17 @@ function scaleNone() {
 }
 
 
+function scale1() {
+    scaleNone();
+    pageBody.classList.add("show-scale-1-x");
+    const button = document.querySelector(".button-scale-1-x");
+    button.classList.add("selected")
+}
+
+
+
 // Show Image button
+
 const imageButton = document.querySelector('.menu-show-image');
 const imageSlider = document.querySelector('.menu-show-image .slider');
 
@@ -527,6 +571,7 @@ function toggleImage() {
 
 
 // Show QR button
+
 const qrButton = document.querySelector('.menu-show-qr');
 const qrSlider = document.querySelector('.menu-show-qr .slider');
 
@@ -540,7 +585,7 @@ function toggleQR() {
     }
 }
 
+        </script>
+    </body>
 
-</script>
-</body>
 </html>
