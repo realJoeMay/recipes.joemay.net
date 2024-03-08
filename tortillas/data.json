@@ -1,0 +1,57 @@
+{
+    "title": "Flour Tortillas",
+    "url_path": "tortillas",
+    "image": "tortillas-960x540.jpg",
+    "servings": 12,
+    "ingredients": [
+        {
+            "amount": "3",
+            "unit": "cups",
+            "item": "all-purpose flour",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "1",
+            "unit": "teaspoon",
+            "item": "salt",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "1",
+            "unit": "teaspoon",
+            "item": "baking powder",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "⅓",
+            "unit": "cup",
+            "item": "extra virgin olive oil",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "1",
+            "unit": "cup",
+            "item": "warm water",
+            "descriptor": "",
+            "list": "Ingredients"
+        }
+    ],
+    "instructions": [
+        {
+            "text": "Mix dry ingredients in a bowl. Add oil and water and mix into a dough ball."
+        },
+        {
+            "text": "Cover and let set for 30 minutes."
+        },
+        {
+            "text": "Divide into 12 balls. Roll out on a floured surface."
+        },
+        {
+            "text": "Cook on a hot, ungreased griddle. Turn. Done."
+        }
+    ]
+}

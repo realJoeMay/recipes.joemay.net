@@ -1,0 +1,95 @@
+{
+    "title": "Breakfast Hash",
+    "servings": 4,
+    "sources": [
+        {
+            "url": "https://www.cookingclassy.com/breakfast-hash/#jump-to-recipe",
+            "text": "Breakfast Hash"
+        }
+    ],
+    "ingredients": [
+        {
+            "amount": "6",
+            "unit": "",
+            "item": "Eggs",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "1/2",
+            "unit": "",
+            "item": "yellow onion",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "1",
+            "unit": "",
+            "item": "red bell pepper",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "20",
+            "unit": "oz",
+            "item": "shredded hash browns",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "8",
+            "unit": "oz",
+            "item": "Breakfast Sausage",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "3/4",
+            "unit": "cup",
+            "item": "cheddar cheese",
+            "descriptor": "",
+            "list": "Ingredients"
+        },
+        {
+            "amount": "3 1/2",
+            "unit": "tbsp",
+            "item": "butter",
+            "descriptor": "divided",
+            "list": "Staples"
+        },
+        {
+            "amount": "1",
+            "unit": "tsp",
+            "item": "Salt",
+            "descriptor": "",
+            "list": "Staples"
+        },
+        {
+            "amount": "1",
+            "unit": "tsp",
+            "item": "Black Pepper",
+            "descriptor": "",
+            "list": "Staples"
+        }
+    ],
+    "instructions": [
+        {
+            "text": "Crumble and cook the sausage in a large skillet. "
+        },
+        {
+            "text": "Put the cooked sausage in a bowl and set aside. Melt 3 Tbsp butter in a over medium-high heat. Add bell pepper and onion and saute 3 minutes."
+        },
+        {
+            "text": "Toss potatoes in the mixture and spread into an even layer, season with salt and pepper to taste. Let cook tossing only occasionally until starting to brown about 6 to 7 minutes."
+        },
+        {
+            "text": "Toss in cooked sausage and cook until potatoes are tender, about 3 minutes longer."
+        },
+        {
+            "text": "Push mixture to one side of the pan. Reduce heat to low. Melt remaining 1/2 Tbsp butter in empty half of skillet and pour in eggs. Season with salt and pepper, scramble and cook."
+        },
+        {
+            "text": "Toss mixtures together, sprinkle with cheese and toss a few times."
+        }
+    ]
+}

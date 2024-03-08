@@ -1,0 +1,63 @@
+{
+    "title": "Chicken and Cauliflower",
+    "subtitle": "and wild rice",
+    "instructions": [
+        {
+            "text": "Preheat oven to 425. Start the rice on the stove, follow directions."
+        },
+        {
+            "text": "Break apart the cauliflower and add to a large bowl. Add olive oil, salt, pepper, and thyme. Toss to coat and then spread into a single layer on the baking sheet and start baking on the higher shelf. Cook 10 minutes."
+        },
+        {
+            "text": "Season the chicken with salt, pepper, and Italian seasoning. Place the chicken on a baking sheet, and put in the oven."
+        },
+        {
+            "text": "Cook the chicken for 10 minutes. Then move to the top rack and broil for 5 minutes."
+        }
+    ],
+    "servings": 6,
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Chicken Thighs",
+            "amount": "2",
+            "unit": "lb"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Cauliflower",
+            "amount": "1",
+            "unit": "head"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Wild Rice",
+            "amount": "2",
+            "unit": "packages"
+        },
+        {
+            "list": "Staples",
+            "item": "Thyme",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Italian Seasoning",
+            "amount": "2",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Salt",
+            "amount": "2",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Black Pepper",
+            "amount": "2",
+            "unit": "tsp"
+        }
+    ]
+}

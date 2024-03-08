@@ -1,0 +1,74 @@
+{
+    "title": "French Toast",
+    "yield": [
+        {
+            "amount": 4,
+            "unit": "servings"
+        },
+        {
+            "amount": 8,
+            "unit": "toasts",
+            "show_yield": false,
+            "show_serving_size": true
+        }
+    ],
+    "instructions": [
+        {
+            "text": "In a skillet, melt butter over medium heat. Whisk together cinnamon, eggs, milk, and vanilla and pour into a shallow container."
+        },
+        {
+            "text": "Dip bread in egg mixture. Fry slices until golden brown, then flip to cook the other side."
+        },
+        {
+            "text": "Serve with syrup."
+        }
+    ],
+    "servings": 4,
+    "sources": [
+        {
+            "name": "Robert Irvine",
+            "url": "https://www.foodnetwork.com/recipes/robert-irvine/french-toast-recipe-1951408"
+        }
+    ],
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Eggs",
+            "amount": "4",
+            "nutrition": {
+                "Calories": 9000,
+                "fat": 5
+            }
+        },
+        {
+            "list": "Ingredients",
+            "item": "Milk",
+            "amount": "¼",
+            "unit": "cup"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Vanilla Extract",
+            "amount": "½",
+            "unit": "tsp"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Cinnamon",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Brioche Bread",
+            "amount": "8",
+            "unit": "slices"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Maple Syrup",
+            "amount": "½",
+            "unit": "cup"
+        }
+    ]
+}

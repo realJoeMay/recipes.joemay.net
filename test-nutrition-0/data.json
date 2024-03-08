@@ -1,0 +1,43 @@
+{
+    "title": "Nutrition = 0",
+    "subtitle": "it's pretty good",
+    "yield": [
+        {
+            "amount": 12,
+            "unit": "servings"
+        },
+        {
+            "amount": 24,
+            "unit": "cups",
+            "show_yield": false,
+            "show_serving_size": true
+        }
+    ],
+    "scale": [
+        {
+            "multiplier": 2
+        }
+    ],
+    "instructions": [
+        {
+            "text": "Crumble ground chuck and sausage into a large stock pot. Cook, stirring frequently, until meat is evenly browned. Drain off excess grease."
+        },
+        {
+            "text": "Add in remaining ingredients. Stir to blend, then cover and simmer over low heat for at least 2 hours, stirring occasionally."
+        }
+    ],
+    "sources": [
+        {
+            "name": "Boilermaker Chili",
+            "url": "https://www.allrecipes.com/recipe/78299/boilermaker-tailgate-chili/"
+        }
+    ],
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Nutrition 0",
+            "amount": "2",
+            "unit": "cups"
+        }
+    ]
+}

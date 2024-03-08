@@ -1,0 +1,98 @@
+{
+    "title": "JM Steak",
+    "subtitle": "with baked potato and zucchini",
+    "shorturl_path": "steak",
+    "instructions": [
+        {
+            "text": "Dry off steak with a paper towel. Brush with olive oil, and season with salt, pepper, and garlic powder. Let it sit and approach room temperature while you move on."
+        },
+        {
+            "text": "Place the trivet and 1 cup cold water to the instant pot. Prep the potatoes by pricking with a knife and place them on the trivet. Set to high pressure and cook for 18 minutes. When done, allow pressure to release naturally for 8-10 minutes, then turn the valve to release any remaining pressure."
+        },
+        {
+            "text": "Chop onions and cook with 1 tbsp olive oil in a cast iron pan. When nicely caramelized, transfer to a nonstick pan. Add 1 tbsp butter and vegetables. Cook for 10 minutes, then remove from heat."
+        },
+        {
+            "text": "Turn the heat to medium high. Put the meat in the skillet. If the steak has a fat cap, sear that side first. Let each side sear for 2 minutes. then use the tongs to sear the edges all the way around. Add a dollop of butter on top and let cook for 2-3 minutes, depending on thickness."
+        },
+        {
+            "text": "With the pan still hot, add the vegetables back into the cast iron pan and top with parmesan cheese."
+        }
+    ],
+    "yield": [
+        {
+            "amount": 4,
+            "unit": "servings"
+        }
+    ],
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Sirloin Steak",
+            "amount": "2",
+            "unit": "lb"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Golden Potatoes",
+            "amount": "4"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Sweet Onions",
+            "amount": "2"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Zucchini",
+            "amount": "1"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Yellow Squash",
+            "amount": "1"
+        },
+        {
+            "list": "Staples",
+            "item": "Parmesan Cheese",
+            "amount": "1/4",
+            "unit": "cup"
+        },
+        {
+            "list": "Staples",
+            "item": "Olive Oil",
+            "amount": "2",
+            "unit": "tbsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Butter",
+            "amount": "2",
+            "unit": "tbsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Thyme",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Garlic Powder",
+            "amount": "1",
+            "unit": "tbsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Salt",
+            "amount": "3",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Black Pepper",
+            "amount": "3",
+            "unit": "tsp"
+        }
+    ]
+}

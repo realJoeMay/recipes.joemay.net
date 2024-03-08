@@ -1,0 +1,29 @@
+{
+    "title": "Smoothie",
+    "yield": 1,
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Banana",
+            "amount": "1"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Frozen Blueberries",
+            "amount": "1",
+            "unit": "cup"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Milk",
+            "amount": "1",
+            "unit": "cup"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Chocolate Whey",
+            "amount": "1",
+            "unit": "scoop"
+        }
+    ]
+}

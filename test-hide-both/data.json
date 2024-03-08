@@ -1,0 +1,166 @@
+{
+    "title": "Hide Details",
+    "show_nutrition": false,
+    "show_cost": false,
+    "subtitle": "it's pretty good",
+    "yield": [
+        {
+            "amount": 12,
+            "unit": "servings"
+        },
+        {
+            "amount": 24,
+            "unit": "cups",
+            "show_yield": false,
+            "show_serving_size": true
+        }
+    ],
+    "scale": [
+        {
+            "multiplier": 2
+        }
+    ],
+    "instructions": [
+        {
+            "text": "Crumble ground chuck and sausage into a large stock pot. Cook, stirring frequently, until meat is evenly browned. Drain off excess grease."
+        },
+        {
+            "text": "Add in remaining ingredients. Stir to blend, then cover and simmer over low heat for at least 2 hours, stirring occasionally."
+        }
+    ],
+    "sources": [
+        {
+            "name": "Boilermaker Chili",
+            "url": "https://www.allrecipes.com/recipe/78299/boilermaker-tailgate-chili/"
+        }
+    ],
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Ground Beef",
+            "amount": "2",
+            "unit": "lb"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Ground Sweet Italian Sausage",
+            "amount": "1",
+            "unit": "lb"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Red Kidney Beans",
+            "amount": "60",
+            "unit": "oz",
+            "descriptor": "drained",
+            "display_amount": "4",
+            "display_unit": "(15 oz) cans"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Diced Tomatoes",
+            "amount": "48",
+            "unit": "oz",
+            "descriptor": "with juice",
+            "display_amount": "2",
+            "display_unit": "(28 oz) cans"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Tomato Paste",
+            "amount": "6",
+            "unit": "oz",
+            "display_amount": "1",
+            "display_unit": "(6 oz) can"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Sweet Onion",
+            "amount": "1"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Red Bell Pepper",
+            "display_item": "Red Bell Peppers",
+            "amount": "2"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Better Than Bouillon Beef",
+            "amount": "4",
+            "unit": "tsp"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Worcestershire Sauce",
+            "amount": "1",
+            "unit": "tbsp"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Beer",
+            "amount": "1/2",
+            "unit": "cup"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Frozen Corn",
+            "amount": "12",
+            "unit": "oz"
+        },
+        {
+            "list": "Staples",
+            "item": "Chili Powder",
+            "amount": "1/4",
+            "unit": "cup"
+        },
+        {
+            "list": "Staples",
+            "item": "Minced Garlic",
+            "amount": "1",
+            "unit": "tbsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Cayenne",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Cumin",
+            "amount": "2",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Paprika",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Oregano",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Basil",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Salt",
+            "amount": "1",
+            "unit": "tsp"
+        },
+        {
+            "list": "Staples",
+            "item": "Black Pepper",
+            "amount": "1",
+            "unit": "tsp"
+        }
+    ]
+}

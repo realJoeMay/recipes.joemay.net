@@ -26,6 +26,7 @@ h1, h2, h3 {
 
 a, a:hover {
   text-decoration: none;
+  color: #146EBE
 }
 
 
@@ -255,11 +256,11 @@ svg {
 
 /* DEBUG */
 
-.ingredient-debug {
+.debug {
     display: none;
 }
 
-.show-debug .ingredient-debug {
+.show-debug .debug {
     display: block;
 }
 
@@ -670,6 +671,16 @@ svg {
             <div class="menu-button button-detail-cost" onclick="detailCost()">Cost</div>
             
             
+            <div class="menu-button button-detail-cost-ps" onclick="detailCostPerServing()">
+              <span style="margin-top:-3px;">Cost</span>
+              <span style="font-size:0.8rem;">per serving</span>
+            </div>
+            
+            
+            <div class="menu-button button-detail-nutrition" onclick="detailNutrition()">
+              <span style="margin-top:-3px;">Nutrition</span>
+              <span style="font-size:0.8rem;">per serving</span>
+            </div>
             
           </div>
         </div>
@@ -690,9 +701,9 @@ svg {
           </h3>
           <ul class="copy-ingredients" style="display:none;">
             
-            <li>3 Avocados, halved, seeded and peeled</li>
+            <li>3 Avocados, </li>
             
-            <li>2 Tomatoes, seeded and diced</li>
+            <li>2 Tomatoes, diced</li>
             
             <li>½ Sweet Onion, diced</li>
             
@@ -737,7 +748,7 @@ svg {
         <div class="menu-section-break"></div>
 
         <div class='menu_feedback'>
-          <a class='menu-header menu-item' href="https://airtable.com/appvz0agJ8X93Wajh/shrNWSOoRRq94K2bn?prefill_page=Recipe - Guacamole&prefill_linked_url=https://recipes.joemay.net/guacamole" target="_blank">
+          <a class='menu-header menu-item' href="https://airtable.com/appKAe8EobJepqaUA/shrsBNxJiO8rjaQmq?prefill_page=Recipe - Guacamole&prefill_source_url=https://recipes.joemay.net/guacamole" target="_blank">
             <span class='menu-icon icon-wrapper'><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 368c26.5 0 48 21.5 48 48v16l72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H64c-8.8 0-16 7.2-16 16V352c0 8.8 7.2 16 16 16h96zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3V474.7v-6.4V468v-4V416H112 64c-35.3 0-64-28.7-64-64V64C0 28.7 28.7 0 64 0H448c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H309.3L208 492z"/></svg></span>
             <span class='menu-text'>Feedback</span>
           </a>
@@ -766,6 +777,8 @@ svg {
           <h3 class='recipe-subtitle'>with stuff in it</h3>
           
 
+          <a class="debug" href="./data.json" target="_blank">Recipe data</a>
+
           
           
 
@@ -775,6 +788,15 @@ svg {
             
 
             
+            <div class='description-row'>
+              <span class='description-label'>Yield:</span>
+              <span class='description-value'>
+                
+                <span class=''>6 servings</span>
+                
+              </span>
+            </div>
+            
 
             
 
@@ -783,11 +805,27 @@ svg {
               <span class='description-label'>Cost:</span>
               <span class='description-value'>
                 
+                $0.65 / 
+                
                 $3.90
               </span>
             </div>
             
 
+            
+            <div>
+              <span class='description-label'>Nutrition per serving</span>
+              <span class='description-value'><div class="nutrition">
+    <div class="calories value">11</div>
+    <div class="calories label">Calories</div>
+    <div class="calories value">0g</div>
+    <div class="fat label">fat</div>
+    <div class="fat value">3g</div>
+    <div class="carbs label">carbs</div>
+    <div class="calories value">0g</div>
+    <div class="protein label">protein</div>
+</div></span>
+            </div>
             
 
           </div><!-- description area -->
@@ -817,18 +855,18 @@ svg {
             <div class="ingredient-item">
               Avocados
               
-              <span class="ingredient-item-descriptor">halved, seeded and peeled</span>
-              
             </div>
             
 
             <div class="ingredient-cost">$2.88</div>
 
+            
+            <div class="ingredient-cost-ps">$0.48</div>
               
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - avocados</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 1.0</div><div>COST</div><div>grocery cost: 0.96</div><div>ingredient cost: 2.88</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - avocados</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 1.0</div><div>COST</div><div>grocery cost: 0.96</div><div>ingredient cost: 2.88</div></div>
 
           </div><!-- ingredient -->
           
@@ -842,7 +880,7 @@ svg {
             <div class="ingredient-item">
               Tomatoes
               
-              <span class="ingredient-item-descriptor">seeded and diced</span>
+              <span class="ingredient-item-descriptor">diced</span>
               
             </div>
             
@@ -853,7 +891,7 @@ svg {
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - tomatoes</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>No grocery count</div><div>COST</div><div>Grocery cost empty</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - tomatoes</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>No grocery count</div><div>COST</div><div>Grocery cost empty</div></div>
 
           </div><!-- ingredient -->
           
@@ -874,11 +912,24 @@ svg {
 
             <div class="ingredient-cost">$0.48</div>
 
+            
+            <div class="ingredient-cost-ps">$0.08</div>
               
 
             
+            <div class="ingredient-nutrition"><div class="nutrition">
+    <div class="calories value">5</div>
+    <div class="calories label">Calories</div>
+    <div class="calories value">0g</div>
+    <div class="fat label">fat</div>
+    <div class="fat value">1g</div>
+    <div class="carbs label">carbs</div>
+    <div class="calories value">0g</div>
+    <div class="protein label">protein</div>
+</div></div>
+            
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - sweet onion</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 5.0</div><div>COST</div><div>grocery cost: 4.79</div><div>ingredient cost: 0.47900000000000004</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - sweet onion</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 5.0</div><div>COST</div><div>grocery cost: 4.79</div><div>ingredient cost: 0.47900000000000004</div></div>
 
           </div><!-- ingredient -->
           
@@ -903,7 +954,7 @@ svg {
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - cilantro</div><div>GROCERY AMOUNT</div><div>Unit: tablespoon, Type: volume</div><div>No grocery volume amount</div><div>COST</div><div>grocery cost: 0.88</div><div>ingredient cost: 0.0</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - cilantro</div><div>GROCERY AMOUNT</div><div>Unit: tablespoon, Type: volume</div><div>No grocery volume amount</div><div>COST</div><div>grocery cost: 0.88</div><div>ingredient cost: 0.0</div></div>
 
           </div><!-- ingredient -->
           
@@ -924,11 +975,24 @@ svg {
 
             <div class="ingredient-cost">$0.38</div>
 
+            
+            <div class="ingredient-cost-ps">$0.06</div>
               
 
             
+            <div class="ingredient-nutrition"><div class="nutrition">
+    <div class="calories value">3</div>
+    <div class="calories label">Calories</div>
+    <div class="calories value">0g</div>
+    <div class="fat label">fat</div>
+    <div class="fat value">1g</div>
+    <div class="carbs label">carbs</div>
+    <div class="calories value">0g</div>
+    <div class="protein label">protein</div>
+</div></div>
+            
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - lime</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 1.0</div><div>COST</div><div>grocery cost: 0.38</div><div>ingredient cost: 0.38</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - lime</div><div>GROCERY AMOUNT</div><div>Ingredient unit: empty</div><div>Grocery count: 1.0</div><div>COST</div><div>grocery cost: 0.38</div><div>ingredient cost: 0.38</div></div>
 
           </div><!-- ingredient -->
           
@@ -952,11 +1016,24 @@ svg {
 
             <div class="ingredient-cost">$0.08</div>
 
+            
+            <div class="ingredient-cost-ps">$0.01</div>
               
 
             
+            <div class="ingredient-nutrition"><div class="nutrition">
+    <div class="calories value">3</div>
+    <div class="calories label">Calories</div>
+    <div class="calories value">0g</div>
+    <div class="fat label">fat</div>
+    <div class="fat value">1g</div>
+    <div class="carbs label">carbs</div>
+    <div class="calories value">0g</div>
+    <div class="protein label">protein</div>
+</div></div>
+            
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - minced garlic</div><div>GROCERY AMOUNT</div><div>Unit: tablespoon, Type: volume</div><div>grocery volume unit: tsp</div><div>grocery amount: 0.0166</div><div>COST</div><div>grocery cost: 4.98</div><div>ingredient cost: 0.08254165974880111</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - minced garlic</div><div>GROCERY AMOUNT</div><div>Unit: tablespoon, Type: volume</div><div>grocery volume unit: tsp</div><div>grocery amount: 0.0166</div><div>COST</div><div>grocery cost: 4.98</div><div>ingredient cost: 0.08254165974880111</div></div>
 
           </div><!-- ingredient -->
           
@@ -975,11 +1052,13 @@ svg {
 
             <div class="ingredient-cost">$0.04</div>
 
+            
+            <div class="ingredient-cost-ps">$0.01</div>
               
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - cayenne</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: cup</div><div>grocery amount: 0.0104</div><div>COST</div><div>grocery cost: 3.98</div><div>ingredient cost: 0.04145836137082185</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - cayenne</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: cup</div><div>grocery amount: 0.0104</div><div>COST</div><div>grocery cost: 3.98</div><div>ingredient cost: 0.04145836137082185</div></div>
 
           </div><!-- ingredient -->
           
@@ -998,11 +1077,13 @@ svg {
 
             <div class="ingredient-cost">$0.03</div>
 
+            
+            <div class="ingredient-cost-ps">$0.00</div>
               
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - cumin</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: cup</div><div>grocery amount: 0.0208</div><div>COST</div><div>grocery cost: 1.28</div><div>ingredient cost: 0.026666684700830137</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - cumin</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: cup</div><div>grocery amount: 0.0208</div><div>COST</div><div>grocery cost: 1.28</div><div>ingredient cost: 0.026666684700830137</div></div>
 
           </div><!-- ingredient -->
           
@@ -1021,11 +1102,13 @@ svg {
 
             <div class="ingredient-cost">$0.02</div>
 
+            
+            <div class="ingredient-cost-ps">$0.00</div>
               
 
             
 
-            <div class="ingredient-debug"><div>GROCERY MATCH</div><div>match found - salt</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: tsp</div><div>grocery amount: 0.006</div><div>COST</div><div>grocery cost: 2.54</div><div>ingredient cost: 0.015301204819277112</div></div>
+            <div class="debug"><div>GROCERY MATCH</div><div>match found - salt</div><div>GROCERY AMOUNT</div><div>Unit: teaspoon, Type: volume</div><div>grocery volume unit: tsp</div><div>grocery amount: 0.006</div><div>COST</div><div>grocery cost: 2.54</div><div>ingredient cost: 0.015301204819277112</div></div>
 
           </div><!-- ingredient -->
           
@@ -1035,7 +1118,6 @@ svg {
         </div>
         
         
-
 
 
         
@@ -1072,12 +1154,8 @@ svg {
         
 
 
-
       </div>
     </main>
-
-
-
 
 
 
