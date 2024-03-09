@@ -1,0 +1,25 @@
+{
+    "title": "Beef & Rice",
+    "subtitle": "",
+    "yield": [
+        {
+            "amount": 3,
+            "unit": "serving"
+        }
+    ],
+    "ingredients": [
+        {
+            "list": "Ingredients",
+            "item": "Ground Beef",
+            "amount": "24",
+            "unit": "oz"
+        },
+        {
+            "list": "Ingredients",
+            "item": "Brown Rice",
+            "amount": "1.5",
+            "unit": "cup",
+            "descriptor": "uncooked"
+        }
+    ]
+}

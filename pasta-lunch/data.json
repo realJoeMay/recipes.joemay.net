@@ -21,28 +21,10 @@
             "unit": "pound"
         },
         {
-            "list": "Staples",
-            "item": "Thyme",
-            "amount": "1",
-            "unit": "tsp"
-        },
-        {
-            "list": "Staples",
-            "item": "Italian Seasoning",
-            "amount": "2",
-            "unit": "tsp"
-        },
-        {
-            "list": "Staples",
-            "item": "Salt",
-            "amount": "2",
-            "unit": "tsp"
-        },
-        {
-            "list": "Staples",
-            "item": "Black Pepper",
-            "amount": "2",
-            "unit": "tsp"
-        }
+            "list": "Ingredients",
+            "item": "Marinara Sauce",
+            "amount": "24",
+            "unit": "oz"
+        }        
     ]
 }
