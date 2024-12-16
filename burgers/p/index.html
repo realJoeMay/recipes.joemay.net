@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Print • Balsamic Onion Burgers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../../icon.png">
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' rel='stylesheet'>
+    <link rel='icon' type='image/x-icon' href='../../icon.png'>
     <style>
 
 body {
@@ -31,6 +32,10 @@ a, a:visited {
     }
 }
 
+h1, h3 {
+    margin: 0;
+}
+
 
 /* SCALE */
 
@@ -39,12 +44,103 @@ a, a:visited {
 }
 
 
-.show-scale-1-x .scale-1-x {
+.display-scale-1x .scale-1x {
   display: block;
 }
 
-.show-scale-3s2-x .scale-3s2-x {
+.display-scale-2x .scale-2x {
   display: block;
+}
+
+
+
+/* PRINT PAGE */
+
+.print-page {
+    margin: 0 auto;
+    padding: 0 5px 5px 5px;
+    max-width: 1200px;
+    flex-grow: 1;
+}
+
+.site-title {
+    padding: 8px 0;
+    border-bottom: 2px solid #e2e2e2;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+
+/* HEADER */
+
+.header {
+    border-bottom: 2px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-area {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.recipe-image {
+    width: 40%;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+
+/* COLUMNS */
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.columns {
+    display: flex;
+    column-gap: 30px;
+}
+
+.ingredients-column {
+    width: 35%;
+}
+
+.ingredients-column:empty {
+    width: 0;
+}
+
+.instructions-column {
+    width: calc(65% - 30px);
+}
+
+.ingredient {
+    padding-bottom: 6px;
+}
+
+.step {
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 10px;
+}
+
+.step-number {
+    font-weight: bold;
+}
+
+.footer {
+    border-top: 2px solid #e2e2e2;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.recipe-qr img {
+    width: 84px;
+    margin-top: 12px;
 }
 
 
@@ -78,8 +174,33 @@ a, a:visited {
     margin: 0.4rem 20px;
     font-weight: 400;
     display: flex;
-    align-items: start;
+    align-items: center;
 }
+
+.menu-item {
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 6px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.menu-item:hover {
+    border-radius: 3px;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.menu-icon {
+    width: 1rem;
+    padding:2px 0.8rem 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-text {
+    flex-grow: 1;
+}
+
 
 .menu-recipe-link {
     margin-top: 20px;
@@ -100,26 +221,36 @@ a, a:visited {
 /* MENU BUTTONS */
 
 .menu-button-section {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 5px;
-    row-gap: 5px;
-    padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2%;
+  row-gap: 5px;
+  padding: 0 20px;
 }
 
-.menu-button {
-    width: 31%;
-    padding: 10px 3px;
-    border: 2px solid transparent;
-    border-radius: 3px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 1;
+.menu-button-section {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                          supported by Chrome, Edge, Opera and Firefox */
+}
+
+.menu-button-section .menu-button {
+  width:32%;
+  padding: 10px 3px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
 }
 
 .menu-button:not(.selected):hover {
@@ -131,27 +262,6 @@ a, a:visited {
     color: #146EBE;
 }
 
-
-/* MENU SLIDERS */
-
-.menu-slider:hover {
-    background-color: rgba(128, 128, 128, 0.2)
-}
-
-
-/* TOGGLE DISPLAYS */
-
-.hide-qr .recipe-qr {
-    display: none;
-}
-
-.hide-image .recipe-image {
-    display: none;
-}
-
-.hide-image .title-area {
-    width: 100%;
-}
 
 
 /* SLIDER SWITCH */
@@ -196,85 +306,6 @@ a, a:visited {
 }
   
 
-
-/* menu icon buttons */
-.icon-wrapper {
-    display: flex;
-    align-items: center;
-    fill: rgb(85, 88, 92);
-}
-
-.menu-btn,
-.menu-close-btn {
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 3px;
-}
-
-.menu-btn svg {
-    width: 1.2rem;
-    height: 1.2rem;
-}
-
-.menu-close-btn svg {
-    width: 1.4rem;
-    height: 1.4rem;
-}
-
-.menu-btn {
-    width: 1.2rem;
-    height: 1.2rem;
-    flex-shrink: 0;
-}
-
-.menu-close-btn {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    width: 1rem;
-    height: 1rem;
-}
-
-/* menu items */
-.menu-header {
-    color: rgb(55, 53, 47);
-    fill: rgb(55, 53, 47);
-    font-size: 1.0rem;
-    margin: 0.4rem 20px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-}
-
-@media screen and (max-width: 450px) {
-    .menu-header {font-size: 1.2rem;}
-}
-
-.menu-item {
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 6px 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.menu-item:hover {
-    border-radius: 3px;
-    background-color: rgba(128, 128, 128, 0.2);
-}
-
-.menu-icon {
-    width: 1rem;
-    padding:2px 0.8rem 0 0;
-    display: flex;
-    align-items: center;
-}
-
-.menu-text {
-    flex-grow: 1;
-}
-
-
 /* PRINT BUTTON */
 
 .menu-print  .menu-icon,
@@ -290,380 +321,273 @@ a, a:visited {
 }
 
 
-/* PRINT PAGE */
+/* TOGGLE DISPLAYS */
 
-.print-page {
-    margin: 0 auto;
-    padding: 0 5px 5px 5px;
-    max-width: 1200px;
-    flex-grow: 1;
-}
-
-.site-title {
-    padding: 8px 0;
-    border-bottom: 2px solid #e2e2e2;
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.recipe-link {
-    color: black;
-    text-decoration: none;
-}
-
-.menu-button.print-button {
-    width: 240px;
-    margin: 0 auto;
-    padding: 10px 0;
-    border-radius: 3px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    column-gap: 6px;
-}
-
-.header {
-    border-bottom: 2px solid #e2e2e2;
-    display: flex;
-    justify-content: space-between;
-}
-
-.title-area {
-    width: 60%;
-    margin-bottom: 20px;
-}
-
-.recipe-image {
-    width: 40%;
-    background-size: cover;
-    margin-bottom: 20px;
-}
-
-
-/* NO RECIPE IMAGE */
-.no-image .recipe-image {
+.hide-qr .recipe-qr {
     display: none;
 }
 
-.no-image .title-area {
+.hide-image .recipe-image {
+    display: none;
+}
+
+.hide-image .title-area {
     width: 100%;
 }
 
-.no-image .menu-show-image{
-    display: none;
-}
 
 
-h1 {
-    margin: 0;
-}
-
-h3 {
-    margin: 0;
-}
-
-.columns {
-    display: flex;
-    column-gap: 30px;
-}
-
-.ingredients-column {
-    width: 35%;
-}
-
-.ingredients-column:empty {
-    width: 0;
-}
-
-.steps-column {
-    width: calc(65% - 30px);
-}
-
-.ingredient {
-    padding-bottom: 6px;
-}
-
-.step {
-    display: flex;
-    column-gap: 10px;
-    padding-bottom: 10px;
-}
-
-.step-number {
-    font-weight: bold;
-}
-
-.footer {
-    border-top: 2px solid #e2e2e2;
-    margin-top: 20px;
-    padding-top: 20px;
-}
-
-.recipe-qr img {
-    width: 84px;
-    margin-top: 12px;
-}
-
-
-/* SCALES */
-
-.scale {
-    display: none;
-}
 
     </style>
-    </head>
-    <body class="show-scale-1-x">
 
-        <div class="menu hide-from-print">
+</head>
+<body>
+    <div class="menu hide-from-print">
 
-            <div class='menu-recipe-link'>
-                <a class='menu-header menu-item' href="../">« Back to Recipe</a>
-            </div>
-    
-            <div class="menu-section-break"></div>
-    
-            
-            <div class='menu-scale'>
-              <h3 class='menu-header'>Scale</h3>
-              <div class='menu-content menu-button-section'>
+        <div class='menu-recipe-link'>
+            <a class='menu-header menu-item' href="..">« Back to Recipe</a>
+        </div>
+
+        <div class="menu-section-break"></div>
+
+        
+        <div class='menu-scale'>
+            <h3 class='menu-header'>Scale</h3>
+            <div class='menu-content menu-button-section'>
                 
-                <div class="menu-button menu-button-scale button-scale-1-x selected" onclick="scale1()">
-    
-                  
+                <div class="menu-button menu-button-scale display-scale-1x-btn selected" onclick="scale1x()">
+
+                    
+                    <span style="margin-top:-3px;">2</span>
+                    <span style="font-size:0.9rem;">Servings</span>
+                    
+
+                </div>
+                
+                <div class="menu-button menu-button-scale display-scale-2x-btn " onclick="scale2x()">
+
+                    
                     <span style="margin-top:-3px;">4</span>
-                    <span style="font-size:0.9rem;">servings</span>
-                  
-    
+                    <span style="font-size:0.9rem;">Servings</span>
+                    
+
                 </div>
                 
-                <div class="menu-button menu-button-scale button-scale-3s2-x " onclick="scale3s2()">
-    
-                  
-                    <span style="margin-top:-3px;">6</span>
-                    <span style="font-size:0.9rem;">servings</span>
-                  
-    
-                </div>
-                
-              </div>
             </div>
-    
-            <div class="menu-section-break"></div>
+        </div>
+
+        <div class="menu-section-break"></div>
+        
+
+        
+        <div class='menu-show-image' onclick="toggleImage()">
+            <div class='menu-header menu-item'>
+                <span class='menu-text'>Show image</span>
+                <div class="slider-wrapper">
+                    <span class="slider checked"></span>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class='menu-show-qr' onclick="toggleQR()">
+            <div class='menu-header menu-item'>
+                <span class='menu-text'>Show QR code</span>
+                <div class="slider-wrapper">
+                    <span class="slider checked"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section-break"></div>
+
+
+        <div class='menu-print' onclick="window.print()">
+            <div class='menu-header menu-item'>
+                <span class='menu-icon icon-wrapper'><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></span>
+                <span class='menu-text'>Print</span>
+            </div>
+        </div>
+
+    </div><!-- menu -->
+
+
+    <div class="print-page">
+
+        <div class="site-title">JMRecipes</div>
+
+        <div class="header">
+
+            <div class="title-area">
+                <h1>Balsamic Onion Burgers</h1>
+                
+
+                
+                
+                <div class='scale scale-1x'>
+                    <span class=''></span>
+                </div>
+                
+                
+                
+                <div class='scale scale-2x'>
+                    <span class=''></span>
+                </div>
+                
+                
+            </div><!-- title-area -->
+
             
-    
+            <img class="recipe-image" src="../balsamic-onion-burgers.jpg">
+            
 
+        </div>
+
+        <div class="columns">
+            
+            
+            <div class="scale scale-1x ingredients-column">
+                
+                <h2 class='ingredient-list-name'>Ingredients</h2>
+                
+                <div class="ingredient">10 oz Ground Beef</div>
+                
+                <div class="ingredient">1 Red Onions</div>
+                
+                <div class="ingredient">2 Brioche Buns</div>
+                
+                
+                <h2 class='ingredient-list-name'>Staples</h2>
+                
+                <div class="ingredient">3 tsp Balsamic Vinegar</div>
+                
+                <div class="ingredient">2 tbsp Mayonnaise</div>
+                
+                <div class="ingredient">2 tsp Olive Oil</div>
+                
+                <div class="ingredient">2 tsp Minced Garlic</div>
+                
+                <div class="ingredient">1 tsp Oregano</div>
+                
+                <div class="ingredient">1 tsp Salt</div>
+                
+                <div class="ingredient">1 tsp Black Pepper</div>
+                
+                
+            </div>
+            
+            
+            
+            <div class="scale scale-2x ingredients-column">
+                
+                <h2 class='ingredient-list-name'>Ingredients</h2>
+                
+                <div class="ingredient">20 oz Ground Beef</div>
+                
+                <div class="ingredient">2 Red Onions</div>
+                
+                <div class="ingredient">4 Brioche Buns</div>
+                
+                
+                <h2 class='ingredient-list-name'>Staples</h2>
+                
+                <div class="ingredient">6 tsp Balsamic Vinegar</div>
+                
+                <div class="ingredient">4 tbsp Mayonnaise</div>
+                
+                <div class="ingredient">4 tsp Olive Oil</div>
+                
+                <div class="ingredient">4 tsp Minced Garlic</div>
+                
+                <div class="ingredient">2 tsp Oregano</div>
+                
+                <div class="ingredient">2 tsp Salt</div>
+                
+                <div class="ingredient">2 tsp Black Pepper</div>
+                
+                
+            </div>
+            
+            
 
             
-            <div class='menu-show-image' onclick="toggleImage()">
-                <div class='menu-header menu-item'>
-                    <span class='menu-text'>Show image</span>
-                    <div class="slider-wrapper">
-                        <span class="slider checked"></span>
-                    </div>
+            
+            <div class='scale scale-1x instructions-column'>
+                
+                <h2 class='instruction-list-name'>Instructions</h2>
+                
+                <div class='step'>
+                    <div class='step-number'>1</div>
+                    <div class='step-text'>Thinly slice the onions. Heat a large drizzle of oil in a large pan over medium heat. Add onions and cook until softened, 4-5 minutes, tossing occasionally.</div>
                 </div>
+                
+                <div class='step'>
+                    <div class='step-number'>2</div>
+                    <div class='step-text'>Stir in balsamic vinegar and reduce heat to low. Cook until very soft, about 10 minutes. Season with salt and pepper. Remove from pan and set aside.</div>
+                </div>
+                
+                <div class='step'>
+                    <div class='step-number'>3</div>
+                    <div class='step-text'>Shape beef into patties. Season with oregano, salt, and pepper. Heat a drizzle of oil over medium-high heat. Add patties and cook to desired doneness, 3-5 minutes per side.</div>
+                </div>
+                
+                <div class='step'>
+                    <div class='step-number'>4</div>
+                    <div class='step-text'>Combine mayonnaise and garlic in a small bowl. Season with salt and pepper. Split buns in half, place on another baking sheet, and toast in oven until golden brown, 3-5 minutes.</div>
+                </div>
+                
+                
             </div>
             
-    
-            <div class='menu-show-qr' onclick="toggleQR()">
-                <div class='menu-header menu-item'>
-                    <span class='menu-text'>Show QR code</span>
-                    <div class="slider-wrapper">
-                        <span class="slider checked"></span>
-                    </div>
+            
+            
+            <div class='scale scale-2x instructions-column'>
+                
+                <h2 class='instruction-list-name'>Instructions</h2>
+                
+                <div class='step'>
+                    <div class='step-number'>1</div>
+                    <div class='step-text'>Thinly slice the onions. Heat a large drizzle of oil in a large pan over medium heat. Add onions and cook until softened, 4-5 minutes, tossing occasionally.</div>
                 </div>
+                
+                <div class='step'>
+                    <div class='step-number'>2</div>
+                    <div class='step-text'>Stir in balsamic vinegar and reduce heat to low. Cook until very soft, about 10 minutes. Season with salt and pepper. Remove from pan and set aside.</div>
+                </div>
+                
+                <div class='step'>
+                    <div class='step-number'>3</div>
+                    <div class='step-text'>Shape beef into patties. Season with oregano, salt, and pepper. Heat a drizzle of oil over medium-high heat. Add patties and cook to desired doneness, 3-5 minutes per side.</div>
+                </div>
+                
+                <div class='step'>
+                    <div class='step-number'>4</div>
+                    <div class='step-text'>Combine mayonnaise and garlic in a small bowl. Season with salt and pepper. Split buns in half, place on another baking sheet, and toast in oven until golden brown, 3-5 minutes.</div>
+                </div>
+                
+                
             </div>
-    
-            <div class="menu-section-break"></div>
-    
-            <div class='menu-print' onclick="window.print()">
-                <div class='menu-header menu-item'>
-                    <span class='menu-icon icon-wrapper'><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zM432 248a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg></span>
-                    <span class='menu-text'>Print</span>
-                </div>
-            </div>
-    
-        </div><!-- menu -->
+            
+            
+
+        </div><!-- columns -->
+
+        <div class="footer">
+            <div class="recipe-url">https://realjoemay.github.io/jmr-demo/burgers</div>
+            <div class="recipe-qr"><img src="../recipe-qr.png"></div>
+        </div>
 
 
-        <div class="print-page">
-            <div class="site-title">JMRecipes</div>
-            <div class="header">
-                <div class="title-area">
-                    <h1>Balsamic Onion Burgers</h1>
-                    <h3>with crispy cauliflower</h3>    
-                </div>
-                
-                
-                <img class="recipe-image" src="../balsamic-onion-burgers-16x9.jpg">
-                
-    
-            </div>
-            <div class="columns">
-                
+    </div>
 
-                
-                <div class="scale scale-1-x ingredients-column">
-                    
-                    <h2 class='ingredient-list-name'>Ingredients</h2>
-                    
-                    <div class="ingredient">20 oz Ground Beef</div>
-                    
-                    <div class="ingredient">1 head Cauliflower</div>
-                    
-                    <div class="ingredient">2 Red Onions</div>
-                    
-                    <div class="ingredient">4 Brioche Buns</div>
-                    
-                    <div class="ingredient">½ cup Panko Breadcrumbs</div>
-                    
-                    
-                    <h2 class='ingredient-list-name'>Staples</h2>
-                    
-                    <div class="ingredient">5 tsp Balsamic Vinegar</div>
-                    
-                    <div class="ingredient">2 tbsp Mayonnaise</div>
-                    
-                    <div class="ingredient">2 tbsp Minced Garlic</div>
-                    
-                    <div class="ingredient">2 tsp Oregano</div>
-                    
-                    <div class="ingredient">8 tsp Olive Oil</div>
-                    
-                    <div class="ingredient">3 tsp Salt</div>
-                    
-                    <div class="ingredient">3 tsp Black Pepper</div>
-                    
-                    
-                </div>
-                
+<script>
 
-                
-                <div class="scale scale-1-x steps-column">
-                    <h2 class='ingredient-list-name'>Instructions</h2>
-                    
-                    
-                    <div class='step'>
-                        <div class='step-number'>1</div>
-                        <div class='step-text'>Preheat oven to 425 degrees. In a large bowl, toss cauliflower, panko, a large drizzle of oil, and a pinch of salt and pepper. Transfer to a baking sheet and roast in oven until golden brown, about 25 minutes.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>2</div>
-                        <div class='step-text'>Thinly slice the onions.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>3</div>
-                        <div class='step-text'>Heat a large drizzle of oil in a large pan over medium heat. Add onions and cook until softened, 4-5 minutes, tossing occasionally.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>4</div>
-                        <div class='step-text'>Stir in balsamic vinegar and reduce heat to low. Cook until very soft, about 10 minutes. Season with salt and pepper. Remove from pan and set aside.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>5</div>
-                        <div class='step-text'>Combine mayonnaise and garlic in a small bowl. Season with salt and pepper. Split buns in half, place on another baking sheet, and toast in oven until golden brown, 3-5 minutes.</div>
-                    </div>
-                    
-        
-
-                </div>
-                
-
-                
-
-                
-                <div class="scale scale-3s2-x ingredients-column">
-                    
-                    <h2 class='ingredient-list-name'>Ingredients</h2>
-                    
-                    <div class="ingredient">30 oz Ground Beef</div>
-                    
-                    <div class="ingredient">1½ head Cauliflower</div>
-                    
-                    <div class="ingredient">3 Red Onions</div>
-                    
-                    <div class="ingredient">6 Brioche Buns</div>
-                    
-                    <div class="ingredient">¾ cup Panko Breadcrumbs</div>
-                    
-                    
-                    <h2 class='ingredient-list-name'>Staples</h2>
-                    
-                    <div class="ingredient">7½ tsp Balsamic Vinegar</div>
-                    
-                    <div class="ingredient">3 tbsp Mayonnaise</div>
-                    
-                    <div class="ingredient">3 tbsp Minced Garlic</div>
-                    
-                    <div class="ingredient">3 tsp Oregano</div>
-                    
-                    <div class="ingredient">12 tsp Olive Oil</div>
-                    
-                    <div class="ingredient">4½ tsp Salt</div>
-                    
-                    <div class="ingredient">4½ tsp Black Pepper</div>
-                    
-                    
-                </div>
-                
-
-                
-                <div class="scale scale-3s2-x steps-column">
-                    <h2 class='ingredient-list-name'>Instructions</h2>
-                    
-                    
-                    <div class='step'>
-                        <div class='step-number'>1</div>
-                        <div class='step-text'>Preheat oven to 425 degrees. In a large bowl, toss cauliflower, panko, a large drizzle of oil, and a pinch of salt and pepper. Transfer to a baking sheet and roast in oven until golden brown, about 25 minutes.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>2</div>
-                        <div class='step-text'>Thinly slice the onions.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>3</div>
-                        <div class='step-text'>Heat a large drizzle of oil in a large pan over medium heat. Add onions and cook until softened, 4-5 minutes, tossing occasionally.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>4</div>
-                        <div class='step-text'>Stir in balsamic vinegar and reduce heat to low. Cook until very soft, about 10 minutes. Season with salt and pepper. Remove from pan and set aside.</div>
-                    </div>
-                    
-                    <div class='step'>
-                        <div class='step-number'>5</div>
-                        <div class='step-text'>Combine mayonnaise and garlic in a small bowl. Season with salt and pepper. Split buns in half, place on another baking sheet, and toast in oven until golden brown, 3-5 minutes.</div>
-                    </div>
-                    
-        
-
-                </div>
-                
-
-                
-            </div><!-- columns -->
-
-            <div class="footer">
-                <div class="recipe-url">https://recipes.joemay.net/burgers</div>
-                <div class="recipe-qr"><img src="../recipe-qr.png"></div>
-            </div>
-
-        </div><!-- print page -->
-        
-        <script>
-        
-var pageBody = document.querySelector("body");
+const pageBody = document.querySelector("body");
 
 
-// Menu - Scale
+
+
+// Scale
 
 function scaleNone() {
     const menuButtons = document.querySelectorAll(".menu-button-scale")
@@ -672,26 +596,28 @@ function scaleNone() {
     })
 
     // remove body classes with prefix
-    const prefix = "show-scale";
+    const prefix = "display-scale";
     const classes = pageBody.className.split(" ").filter(c => !c.startsWith(prefix));
     pageBody.className = classes.join(" ").trim();
 }
 
 
-function scale1() {
+function scale1x() {
     scaleNone();
-    pageBody.classList.add("show-scale-1-x");
-    const button = document.querySelector(".button-scale-1-x");
+    pageBody.classList.add("display-scale-1x");
+    const button = document.querySelector(".display-scale-1x-btn");
     button.classList.add("selected")
 }
 
-function scale3s2() {
+function scale2x() {
     scaleNone();
-    pageBody.classList.add("show-scale-3s2-x");
-    const button = document.querySelector(".button-scale-3s2-x");
+    pageBody.classList.add("display-scale-2x");
+    const button = document.querySelector(".display-scale-2x-btn");
     button.classList.add("selected")
 }
 
+
+pageBody.classList.add("display-scale-1x");
 
 
 // Show Image button
@@ -725,7 +651,26 @@ function toggleQR() {
     }
 }
 
-        </script>
-    </body>
+// Keyboard Shortcuts
 
+document.addEventListener("keydown", function(e) {
+
+    console.log(e.code);
+
+    // Press digit to select scale
+    
+    if (e.code === "Digit1") {
+        scale1x();
+    }
+    
+    if (e.code === "Digit2") {
+        scale2x();
+    }
+    
+
+});
+
+
+</script>
+</body>
 </html>
