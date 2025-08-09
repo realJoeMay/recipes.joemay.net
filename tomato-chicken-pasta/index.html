@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Guacamole • JMRecipes</title>
+    <title>Chicken Pasta • JMRecipes</title>
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' rel='stylesheet'>
@@ -49,10 +49,6 @@ a:hover {
 
 
 .display-scale-1x .scale-1x {
-  display: block;
-}
-
-.display-scale-2x .scale-2x {
   display: block;
 }
 
@@ -714,33 +710,6 @@ a.menu-header:hover {
             <div class="menu-section-break"></div>
 
             
-            <div class='menu-scale'>
-                <h3 class='menu-header'>Scale</h3>
-                <div class='menu-content menu-button-section'>
-                    
-                    <div class="menu-button menu-button-scale display-scale-1x-btn selected" onclick="scale1x()">
-    
-                        
-                        <span style="margin-top:-3px;">6</span>
-                        <span style="font-size:0.8rem;">Servings</span>
-                        
-
-                    </div>
-                    
-                    <div class="menu-button menu-button-scale display-scale-2x-btn " onclick="scale2x()">
-    
-                        
-                        <span style="margin-top:-3px;">12</span>
-                        <span style="font-size:0.8rem;">Servings</span>
-                        
-
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="menu-section-break"></div>
-            
 
 
             
@@ -779,41 +748,6 @@ a.menu-header:hover {
             <div class="menu-section-break scale scale-1x"></div>
             
             
-            
-            <div class='menu-details scale scale-2x'>
-                <div class='menu-scale'>
-                    <h3 class='menu-header'>Ingredient Detail</h3>
-                    <div class='menu-content menu-button-section'>
-
-                        <div class="menu-button menu-button-detail menu-button-detail-none selected" onclick="detailNone()">None</div>
-
-                        
-                        <div class="menu-button menu-button-detail menu-button-detail-cost" onclick="detailCost()">Cost</div>
-                        
-
-                        
-                        <div class="menu-button menu-button-detail menu-button-detail-cost-per-serving" onclick="detailCostPerServing()">
-                            <span style="margin-top:-3px;">Cost</span>
-                            <span style="font-size:0.8rem;">per serving</span>
-                        </div>
-                        
-
-                        
-                        <div class="menu-button menu-button-detail menu-button-detail-nutrition-per-serving" onclick="detailNutritionPerServing()">
-                            
-                            <span style="margin-top:-3px;">Nutrition</span>
-                            <span style="font-size:0.8rem;">per serving</span>
-                            
-                        </div>
-                        
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-section-break scale scale-2x"></div>
-            
-            
     
 
 
@@ -831,58 +765,31 @@ a.menu-header:hover {
                 </h3>
                 <ul class="copy-ingredients" style="display:none;">
                     
-                    <li>3 Avocados</li>
+                    <li>8 oz Rigatoni</li>
                     
-                    <li>2 Roma Tomatoes</li>
+                    <li>1½ lb Boneless Skinless Chicken Thighs</li>
                     
-                    <li>½ Sweet Onion</li>
+                    <li>7 oz Julienne Cut Sun Dried Tomatoes</li>
                     
-                    <li>1 tbsp Cilantro</li>
+                    <li>⅔ cup Heavy Cream</li>
                     
-                    <li>1 Lime</li>
+                    <li>½ cup Parmesan Wedge</li>
                     
-                    <li>1 tbsp Minced Garlic</li>
+                    <li>2 cups Baby Spinach</li>
+                    
+                    <li>¼ cup Chicken Stock</li>
+                    
+                    <li>1 tbsp Butter</li>
+                    
+                    <li>3 tsp Minced Garlic</li>
+                    
+                    <li>½ tsp Oregano</li>
                     
                     <li>½ tsp Cayenne Pepper</li>
                     
-                    <li>½ tsp Cumin</li>
+                    <li>½ tsp Black Pepper</li>
                     
                     <li>½ tsp Salt</li>
-                    
-                </ul>
-            </div>
-            
-            
-            
-            <div class='menu-copy-ingredients scale scale-2x'>
-                <h3 class='menu-header menu-item'>
-                    <span class='menu-icon icon-wrapper copy-ingredients-item'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M280 64l40 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l40 0 9.6 0C121 27.5 153.3 0 192 0s71 27.5 78.4 64l9.6 0zM64 112c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16l-16 0 0 24c0 13.3-10.7 24-24 24l-88 0-88 0c-13.3 0-24-10.7-24-24l0-24-16 0zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg></span>
-                    <span class='menu-text copy-ingredients-item'>
-                        <span class="button-label">Copy Ingredients</span>
-                        
-                        <span class="button-sublabel" style="font-size:0.8rem;">for 12 servings</span>
-                        
-                    </span>
-                </h3>
-                <ul class="copy-ingredients" style="display:none;">
-                    
-                    <li>6 Avocados</li>
-                    
-                    <li>4 Roma Tomatoes</li>
-                    
-                    <li>1 Sweet Onion</li>
-                    
-                    <li>2 tbsp Cilantro</li>
-                    
-                    <li>2 Lime</li>
-                    
-                    <li>2 tbsp Minced Garlic</li>
-                    
-                    <li>1 tsp Cayenne Pepper</li>
-                    
-                    <li>1 tsp Cumin</li>
-                    
-                    <li>1 tsp Salt</li>
                     
                 </ul>
             </div>
@@ -917,7 +824,7 @@ a.menu-header:hover {
             <div class="menu-section-break"></div>
     
             <div class='menu_feedback'>
-                <a class='menu-header menu-item' href="https://airtable.com/appKAe8EobJepqaUA/shrsBNxJiO8rjaQmq?prefill_page=Guacamole&prefill_source_url=https%3A%2F%2Frecipes.joemay.net%2Fguac" target="_blank">
+                <a class='menu-header menu-item' href="https://airtable.com/appKAe8EobJepqaUA/shrsBNxJiO8rjaQmq?prefill_page=Chicken+Pasta&prefill_source_url=https%3A%2F%2Frecipes.joemay.net%2Ftomato-chicken-pasta" target="_blank">
                     <span class='menu-icon icon-wrapper'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M160 368c26.5 0 48 21.5 48 48l0 16 72.5-54.4c8.3-6.2 18.4-9.6 28.8-9.6L448 368c8.8 0 16-7.2 16-16l0-288c0-8.8-7.2-16-16-16L64 48c-8.8 0-16 7.2-16 16l0 288c0 8.8 7.2 16 16 16l96 0zm48 124l-.2 .2-5.1 3.8-17.1 12.8c-4.8 3.6-11.3 4.2-16.8 1.5s-8.8-8.2-8.8-14.3l0-21.3 0-6.4 0-.3 0-4 0-48-48 0-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L448 0c35.3 0 64 28.7 64 64l0 288c0 35.3-28.7 64-64 64l-138.7 0L208 492z"/></svg></span>
                     <span class='menu-text'>Feedback</span>
                 </a>
@@ -939,7 +846,7 @@ a.menu-header:hover {
 
         
         <div class='recipe-banner'>
-            <div class='recipe-image' style='background-image: url(./guacamole.jpg);'>&nbsp;</div>
+            <div class='recipe-image' style='background-image: url(./Creamy-Sun-Dried-Tomato-Pasta.jpg);'>&nbsp;</div>
         </div>
         
   
@@ -948,9 +855,11 @@ a.menu-header:hover {
             <div class='recipe-box recipe-box-header'>
 
                 <div class='title-area'>
-                    <h1 class='recipe-title'>Guacamole</h1>
+                    <h1 class='recipe-title'>Chicken Pasta</h1>
                     <span class='menu-toggle-btn icon-wrapper' onclick='toggleMenu()'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></span>
                 </div>
+                
+                <h3 class='recipe-subtitle'>with sun dried tomatoes</h3>
                 
 
                 
@@ -966,7 +875,7 @@ a.menu-header:hover {
                             <span class='description-value'>
                                 
                                 
-                                <span class=''>6 servings</span>
+                                <span class=''>4 servings</span>
                                 
                                 
                             </span>
@@ -981,69 +890,9 @@ a.menu-header:hover {
                         <div class='description-row'>
                             <span class='description-label'>Cost:</span>
                             <span class=''>
-                                $4.55
+                                $14.59
                                 
-                                <span class="scale-cost-per-serving">($0.76 per serving)</span>
-                                
-                            </span>
-                        </div>
-                        
-
-                        
-                        <div class=''>
-                            <span class='description-label'>Nutrition per serving</span>
-                            <div class="nutrition">
-                                <div class="calories value">135</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">11g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">10g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">2g</div>
-                                <div class="protein label">protein</div>
-                            </div>    
-                        </div>
-                        
-
-                        
-
-                        
-
-
-                    </div><!-- description area -->
-                </div><!-- scale -->
-                
-                
-                
-                <div class='scale scale-2x'>
-                    <div class='description-area'>
-
-                        
-
-                        
-                        <div class='description-row'>
-                            <span class='description-label'>Yield:</span>
-                            <span class='description-value'>
-                                
-                                
-                                <span class=''>12 servings</span>
-                                
-                                
-                            </span>
-                        </div>
-                        
-
-                        
-
-                        
-
-                        
-                        <div class='description-row'>
-                            <span class='description-label'>Cost:</span>
-                            <span class=''>
-                                $9.11
-                                
-                                <span class="scale-cost-per-serving">($0.76 per serving)</span>
+                                <span class="scale-cost-per-serving">($3.65 per serving)</span>
                                 
                             </span>
                         </div>
@@ -1053,13 +902,13 @@ a.menu-header:hover {
                         <div class=''>
                             <span class='description-label'>Nutrition per serving</span>
                             <div class="nutrition">
-                                <div class="calories value">135</div>
+                                <div class="calories value">706</div>
                                 <div class="calories label">Calories</div>
-                                <div class="calories value">11g</div>
+                                <div class="calories value">33g</div>
                                 <div class="fat label">fat</div>
-                                <div class="fat value">10g</div>
+                                <div class="fat value">56g</div>
                                 <div class="carbs label">carbs</div>
-                                <div class="calories value">2g</div>
+                                <div class="calories value">47g</div>
                                 <div class="protein label">protein</div>
                             </div>    
                         </div>
@@ -1090,28 +939,98 @@ a.menu-header:hover {
                     <div class="ingredient">
         
                         
-                        <div class="ingredient-amount">3</div>
+                        <div class="ingredient-amount">8 oz</div>
                         
             
                         
                         <div class="ingredient-item">
-                            Avocados
+                            Rigatoni
                             
                             
                         </div>
                         
 
-                        <div class="ingredient-detail detail-cost">$2.88</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.48</div>
+                        <div class="ingredient-detail detail-cost">$0.90</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.22</div>
 
                         
                         <div class="ingredient-detail detail-nutrition-per-serving">
                             <div class="nutrition">
-                                <div class="calories value">120</div>
+                                <div class="calories value">200</div>
                                 <div class="calories label">Calories</div>
-                                <div class="calories value">11g</div>
+                                <div class="calories value">1g</div>
                                 <div class="fat label">fat</div>
-                                <div class="fat value">6g</div>
+                                <div class="fat value">41g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">7g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">1½ lb</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
+                            Boneless Skinless Chicken Thighs
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$4.44</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$1.11</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">206</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">7g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">0g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">33g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">7 oz</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
+                            Julienne Cut Sun Dried Tomatoes
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$5.49</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$1.37</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">79</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">4g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">11g</div>
                                 <div class="carbs label">carbs</div>
                                 <div class="calories value">2g</div>
                                 <div class="protein label">protein</div>
@@ -1125,100 +1044,96 @@ a.menu-header:hover {
                     <div class="ingredient">
         
                         
-                        <div class="ingredient-amount">2</div>
+                        <div class="ingredient-amount">⅔ cup</div>
                         
             
                         
                         <div class="ingredient-item">
-                            Roma Tomatoes
-                            
-                            <span class="ingredient-item-descriptor">diced</span>
+                            Heavy Cream
                             
                             
                         </div>
                         
 
-                        <div class="ingredient-detail detail-cost">$0.54</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.09</div>
+                        <div class="ingredient-detail detail-cost">$0.93</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.23</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">133</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">13g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">3g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">0g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">½ cup</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
+                            Parmesan Wedge
+                            
+                            <span class="ingredient-item-descriptor">Grated</span>
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$1.37</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.34</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">55</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">4g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">0g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">4g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">2 cups</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
+                            Baby Spinach
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$1.05</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.26</div>
 
                         
                         <div class="ingredient-detail detail-nutrition-per-serving">
                             <div class="nutrition">
                                 <div class="calories value">4</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">½</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Sweet Onion
-                            
-                            <span class="ingredient-item-descriptor">diced</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.48</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.08</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">5</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tbsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Cilantro
-                            
-                            <span class="ingredient-item-descriptor">chopped</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.11</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
                                 <div class="calories label">Calories</div>
                                 <div class="calories value">0g</div>
                                 <div class="fat label">fat</div>
@@ -1236,30 +1151,28 @@ a.menu-header:hover {
                     <div class="ingredient">
         
                         
-                        <div class="ingredient-amount">1</div>
+                        <div class="ingredient-amount">¼ cup</div>
                         
             
                         
                         <div class="ingredient-item">
-                            Lime
-                            
-                            <span class="ingredient-item-descriptor">juiced</span>
+                            Chicken Stock
                             
                             
                         </div>
                         
 
-                        <div class="ingredient-detail detail-cost">$0.38</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.06</div>
+                        <div class="ingredient-detail detail-cost">$0.09</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
 
                         
                         <div class="ingredient-detail detail-nutrition-per-serving">
                             <div class="nutrition">
-                                <div class="calories value">3</div>
+                                <div class="calories value">1</div>
                                 <div class="calories label">Calories</div>
                                 <div class="calories value">0g</div>
                                 <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
+                                <div class="fat value">0g</div>
                                 <div class="carbs label">carbs</div>
                                 <div class="calories value">0g</div>
                                 <div class="protein label">protein</div>
@@ -1282,6 +1195,41 @@ a.menu-header:hover {
             
                         
                         <div class="ingredient-item">
+                            Butter
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$0.12</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.03</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">25</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">3g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">0g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">0g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">3 tsp</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
                             Minced Garlic
                             
                             
@@ -1289,16 +1237,51 @@ a.menu-header:hover {
                         
 
                         <div class="ingredient-detail detail-cost">$0.08</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
+
+                        
+                        <div class="ingredient-detail detail-nutrition-per-serving">
+                            <div class="nutrition">
+                                <div class="calories value">4</div>
+                                <div class="calories label">Calories</div>
+                                <div class="calories value">0g</div>
+                                <div class="fat label">fat</div>
+                                <div class="fat value">1g</div>
+                                <div class="carbs label">carbs</div>
+                                <div class="calories value">0g</div>
+                                <div class="protein label">protein</div>
+                            </div>
+                        </div>
+                        
+
+                    </div><!-- ingredient -->
+    
+                
+                    <div class="ingredient">
+        
+                        
+                        <div class="ingredient-amount">½ tsp</div>
+                        
+            
+                        
+                        <div class="ingredient-item">
+                            Oregano
+                            
+                            
+                        </div>
+                        
+
+                        <div class="ingredient-detail detail-cost">$0.02</div>
                         <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
 
                         
                         <div class="ingredient-detail detail-nutrition-per-serving">
                             <div class="nutrition">
-                                <div class="calories value">3</div>
+                                <div class="calories value">0</div>
                                 <div class="calories label">Calories</div>
                                 <div class="calories value">0g</div>
                                 <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
+                                <div class="fat value">0g</div>
                                 <div class="carbs label">carbs</div>
                                 <div class="calories value">0g</div>
                                 <div class="protein label">protein</div>
@@ -1352,14 +1335,14 @@ a.menu-header:hover {
             
                         
                         <div class="ingredient-item">
-                            Cumin
+                            Black Pepper
                             
                             
                         </div>
                         
 
-                        <div class="ingredient-detail detail-cost">$0.03</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
+                        <div class="ingredient-detail detail-cost">$0.06</div>
+                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
 
                         
                         <div class="ingredient-detail detail-nutrition-per-serving">
@@ -1420,347 +1403,6 @@ a.menu-header:hover {
             
             
             
-            
-            <div class="scale scale-2x">
-                <div class="recipe-box recipe-box-ingredients">
-    
-                    
-                    <h2 class='ingredient-list-name'>Ingredients</h2>
-        
-                    
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">6</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Avocados
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$5.76</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.48</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">120</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">11g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">6g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">2g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">4</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Roma Tomatoes
-                            
-                            <span class="ingredient-item-descriptor">diced</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$1.08</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.09</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">4</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Sweet Onion
-                            
-                            <span class="ingredient-item-descriptor">diced</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.96</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.08</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">5</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">2 tbsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Cilantro
-                            
-                            <span class="ingredient-item-descriptor">chopped</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.22</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">2</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Lime
-                            
-                            <span class="ingredient-item-descriptor">juiced</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.76</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.06</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">3</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                
-                    <h2 class='ingredient-list-name'>Staples</h2>
-        
-                    
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">2 tbsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Minced Garlic
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.17</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">3</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Cayenne Pepper
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.08</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Cumin
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.05</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Salt
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.03</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                
-                </div><!-- recipe-box -->
-            </div><!-- scale -->
-            
-            
-            
 
 
             
@@ -1778,7 +1420,7 @@ a.menu-header:hover {
                         <div class='step-number-circle'>
                             <div class='step-number-number'>1</div>
                         </div>
-                        <div class='step-text'>In a large bowl place the scooped avocado pulp and lime juice, toss to coat.</div>
+                        <div class='step-text'>Bring a large pot of water to a boil. Sdd the pasta and cook per the package. Drain and set aside.</div>
                     </div>
           
                     
@@ -1786,7 +1428,7 @@ a.menu-header:hover {
                         <div class='step-number-circle'>
                             <div class='step-number-number'>2</div>
                         </div>
-                        <div class='step-text'>Using a potato masher add the salt, cumin, and cayenne and mash. Then, fold in the onions, tomatoes, cilantro, and garlic.</div>
+                        <div class='step-text'>Meanwhile, melt the butter in a large skillet over medium heat. Add the chicken and cook until golden brown on all sides, about 3-4 minutes.</div>
                     </div>
           
                     
@@ -1794,44 +1436,15 @@ a.menu-header:hover {
                         <div class='step-number-circle'>
                             <div class='step-number-number'>3</div>
                         </div>
-                        <div class='step-text'>Let sit at room temperature for 1 hour and then serve.</div>
-                    </div>
-          
-                    
-                </div>
-                
-
-            </div>
-            
-            
-            
-            <div class="scale scale-2x">
-
-                
-                <div class="recipe-box recipe-box-instructions">
-                    <h2 class='box-title'>Instructions</h2>
-                    
-                    <div class='step'>
-                        <div class='step-number-circle'>
-                            <div class='step-number-number'>1</div>
-                        </div>
-                        <div class='step-text'>In a large bowl place the scooped avocado pulp and lime juice, toss to coat.</div>
+                        <div class='step-text'>Reduce heat to medium-low, then add the drained tomatoes, garlic, oregano, salt, pepper, and cayenne pepper and cook about 30 seconds. Add the wine and cook for 2 minutes, stirring occasionally. Remove from heat.</div>
                     </div>
           
                     
                     <div class='step'>
                         <div class='step-number-circle'>
-                            <div class='step-number-number'>2</div>
+                            <div class='step-number-number'>4</div>
                         </div>
-                        <div class='step-text'>Using a potato masher add the salt, cumin, and cayenne and mash. Then, fold in the onions, tomatoes, cilantro, and garlic.</div>
-                    </div>
-          
-                    
-                    <div class='step'>
-                        <div class='step-number-circle'>
-                            <div class='step-number-number'>3</div>
-                        </div>
-                        <div class='step-text'>Let sit at room temperature for 1 hour and then serve.</div>
+                        <div class='step-text'>Add the whipping cream, then the pasta, spinach, and Parmesan. Stir for 30 seconds to allow the spinach to cook down.</div>
                     </div>
           
                     
@@ -1854,26 +1467,7 @@ a.menu-header:hover {
                     
                     <div class="note sources">
                         
-                        <div class="source">Source: <a href="https://www.foodnetwork.com/recipes/alton-brown/guacamole-recipe-1940609" target="_blank">Alton Brown</a></div>
-                        
-                    </div>
-                    
-
-                </div>
-            </div>
-            
-            
-            
-            <div class="scale scale-2x">
-                <div class="recipe-box recipe-box-notes">
-                    <h2 class='box-title'>Notes</h2>
-
-                    
-
-                    
-                    <div class="note sources">
-                        
-                        <div class="source">Source: <a href="https://www.foodnetwork.com/recipes/alton-brown/guacamole-recipe-1940609" target="_blank">Alton Brown</a></div>
+                        <div class="source">Source: <a href="https://www.wellplated.com/sun-dried-tomato-pasta/" target="_blank">well plated</a></div>
                         
                     </div>
                     
@@ -1891,7 +1485,7 @@ a.menu-header:hover {
 
 
     <script type="application/ld+json">
-        {"@context": "https://schema.org", "@type": "Recipe", "name": "Guacamole", "image": "guacamole.jpg", "recipeYield": "6 servings", "recipeIngredient": ["3 Avocados", "2 Roma Tomatoes", "\u00bd Sweet Onion", "1 tbsp Cilantro", "1 Lime", "1 tbsp Minced Garlic", "\u00bd tsp Cayenne Pepper", "\u00bd tsp Cumin", "\u00bd tsp Salt"]}
+        {"@context": "https://schema.org", "@type": "Recipe", "name": "Chicken Pasta", "image": "Creamy-Sun-Dried-Tomato-Pasta.jpg", "recipeYield": "4 servings", "recipeIngredient": ["8 oz Rigatoni", "1\u00bd lb Boneless Skinless Chicken Thighs", "7 oz Julienne Cut Sun Dried Tomatoes", "\u2154 cup Heavy Cream", "\u00bd cup Parmesan Wedge", "2 cups Baby Spinach", "\u00bc cup Chicken Stock", "1 tbsp Butter", "3 tsp Minced Garlic", "\u00bd tsp Oregano", "\u00bd tsp Cayenne Pepper", "\u00bd tsp Black Pepper", "\u00bd tsp Salt"]}
     </script>
 
     <script>
@@ -2015,13 +1609,6 @@ function scale1x() {
     button.classList.add("selected")
 }
 
-function scale2x() {
-    scaleNone();
-    pageBody.classList.add("display-scale-2x");
-    const button = document.querySelector(".display-scale-2x-btn");
-    button.classList.add("selected")
-}
-
 
 pageBody.classList.add("display-scale-1x");
 
@@ -2104,30 +1691,6 @@ document.querySelector(".menu-copy-ingredients.scale-1x .menu-header").addEventL
 
 
 
-document.querySelector(".menu-copy-ingredients.scale-2x .menu-header").addEventListener("click", function() {
-    var copiedText = "";
-    console.log('hit copy button');
-    document.querySelector(".menu-copy-ingredients.scale-2x .copy-ingredients").querySelectorAll("li").forEach(function(line) {
-        copiedText += line.textContent.trim() + "\n";
-    });
-    navigator.clipboard.writeText(copiedText)
-        .then(function() {
-        document.querySelector(".menu-copy-ingredients.scale-2x .menu-icon").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>';
-        document.querySelector(".menu-copy-ingredients.scale-2x .button-label").innerHTML = 'Copied!';
-        setTimeout(function() {
-            document.querySelector(".menu-copy-ingredients.scale-2x .menu-icon").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M280 64l40 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l40 0 9.6 0C121 27.5 153.3 0 192 0s71 27.5 78.4 64l9.6 0zM64 112c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16l-16 0 0 24c0 13.3-10.7 24-24 24l-88 0-88 0c-13.3 0-24-10.7-24-24l0-24-16 0zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>';
-            document.querySelector(".menu-copy-ingredients.scale-2x .button-label").innerHTML = 'Copy Ingredients';
-        }, 3000);
-        })
-        .catch(function(err) {
-        console.error('Unable to copy text: ', err);
-        });
-    });
-
-
-
-
-
 
 
 
@@ -2153,10 +1716,6 @@ document.addEventListener("keydown", function(e) {
     
     if (e.code === "Digit1") {
         scale1x();
-    }
-    
-    if (e.code === "Digit2") {
-        scale2x();
     }
     
 
