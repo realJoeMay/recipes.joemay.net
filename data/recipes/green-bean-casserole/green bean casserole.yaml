@@ -1,0 +1,30 @@
+title: Green Bean Casserole
+subtitle: ""
+yield:
+- number: 6
+  unit: servings
+scale:
+- multiplier: 2
+ingredients:
+- number: 10.5
+  unit: oz
+  item: Cream of Mushroom Soup
+- number: 3/4
+  unit: cup
+  item: Milk
+- number: 1/8
+  unit: tsp
+  item: Black Pepper
+- number: 29
+  unit: oz
+  item: Canned Green Beans
+  descriptor: drained
+- number: 4/3
+  unit: cups
+  item: French Fried Onions
+instructions:
+- text: Preheat oven to 350°F. Mix cream of mushroom soup, milk, and pepper in a baking dish. Stir in green beans and half of the onions.
+- text: Bake 30 minutes. Stir and top with remaining onions. Bake 5 minutes longer or until onions are golden brown.
+sources:
+- name: French's
+  url: https://www.mccormick.com/frenchs/recipes/salads-sides/frenchs-green-bean-casserole

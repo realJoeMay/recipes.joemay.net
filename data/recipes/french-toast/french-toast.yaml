@@ -1,0 +1,35 @@
+title: French Toast
+yield:
+- number: 2
+  unit: servings
+- number: 4
+  unit: toasts
+  show_serving_size: true
+  show_yield: false
+scale:
+- multiplier: 2
+ingredients:
+- number: 4
+  item: Eggs
+- number: 1/4
+  unit: cup
+  item: Milk
+- number: 1/2
+  unit: tsp
+  item: Vanilla Extract
+- number: 1
+  unit: tsp
+  item: Cinnamon
+- number: 8
+  unit: slices
+  item: Brioche Bread
+- number: 1/2
+  unit: cup
+  item: Maple Syrup
+instructions:
+- text: In a skillet, melt butter over medium heat. Whisk together cinnamon, eggs, milk, and vanilla and pour into a shallow container.
+- text: Dip bread in egg mixture. Fry slices until golden brown, then flip to cook the other side.
+- text: Serve with syrup.
+sources:
+- name: Robert Irvine
+  url: https://www.foodnetwork.com/recipes/robert-irvine/french-toast-recipe-1951408

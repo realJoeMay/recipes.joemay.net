@@ -1,0 +1,33 @@
+title: Chicken Pasta
+subtitle: with sun dried tomatoes
+yield:
+- number: 4
+  unit: servings
+ingredients:
+- text: 8 oz Rigatoni
+- text: 1.5 lb Boneless Skinless Chicken Thighs
+- text: 7 oz Julienne Cut Sun Dried Tomatoes
+- text: 2/3 cup Heavy Cream
+- text: 1/2 cup Parmesan Wedge, Grated
+- text: 2 cups Baby Spinach
+- text: 1/4 cup Chicken Stock
+- text: 1 tbsp Butter
+  list: Staples
+- text: 3 tsp Minced Garlic
+  list: Staples
+- text: 0.5 tsp Oregano
+  list: Staples
+- text: 0.5 tsp Cayenne Pepper
+  list: Staples
+- text: 0.5 tsp Black Pepper
+  list: Staples
+- text: 0.5 tsp Salt
+  list: Staples
+instructions:
+- text: Bring a large pot of water to a boil. Sdd the pasta and cook per the package. Drain and set aside.
+- text: Meanwhile, melt the butter in a large skillet over medium heat. Add the chicken and cook until golden brown on all sides, about 3-4 minutes.
+- text: Reduce heat to medium-low, then add the drained tomatoes, garlic, oregano, salt, pepper, and cayenne pepper and cook about 30 seconds. Add the wine and cook for 2 minutes, stirring occasionally. Remove from heat.
+- text: Add the whipping cream, then the pasta, spinach, and Parmesan. Stir for 30 seconds to allow the spinach to cook down. 
+sources:
+- name: well plated
+  url: https://www.wellplated.com/sun-dried-tomato-pasta/

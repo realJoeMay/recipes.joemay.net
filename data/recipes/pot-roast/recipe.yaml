@@ -1,0 +1,38 @@
+title: Pot Roast
+subtitle: via instant pot
+yield:
+- number: 6
+  unit: servings
+ingredients:
+- text: 3 lb Chuck Roast
+- text: 1.5 lb Baby Red Potatoes
+- text: 4 Carrots, chopped into large chunks
+- text: 1 Yellow Onion, chopped
+- text: 3 tsp Beef Broth Base
+  list: Staples
+- text: 3 cups Water
+  list: Staples
+- text: 2 tbsp Worcestershire Sauce
+  list: Staples
+- text: 1 tbsp Olive Oil
+  list: Staples
+- text: 1 tsp Onion Powder
+  list: Staples
+- text: 1 tsp Garlic Powder
+  list: Staples
+- text: 1/2 tsp Paprika
+  list: Staples
+- text: 1/2 tsp Black Pepper
+  list: Staples
+- text: 1 tsp Salt
+  list: Staples
+- text: 1 tsp Salt
+  list: Staples
+instructions:
+- text: Set instant pot to "saute". Mix the spices in a small bowl and rub the mixture over the roast. 
+- text: Drizzle oil into the pot, then sear the roast for 3 minutes on each side. 
+- text: Set to "pressure cook" on high for 60 minutes. Add potatoes, onions, and carrots to pot, then add broth and worcestershire and close the lid.
+- text: When the time is up, let it naturally release for 10 minutes before venting. 
+sources:
+- name: Creme De La Crumb
+  url: https://www.lecremedelacrumb.com/instant-pot-pot-roast-potatoes/

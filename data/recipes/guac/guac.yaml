@@ -1,0 +1,45 @@
+title: Guacamole
+yield:
+- number: 6
+  unit: servings
+scale:
+- multiplier: 2
+ingredients:
+- number: 3
+  item: Avocados
+- number: 2
+  item: Roma Tomatoes
+  descriptor: diced
+- number: 1/2
+  item: Sweet Onion
+  descriptor: diced
+- number: 1
+  unit: tbsp
+  item: Cilantro
+  descriptor: chopped
+- number: 1
+  item: Lime
+  descriptor: juiced
+- number: 1
+  unit: tbsp
+  item: Minced Garlic
+  list: Staples
+- number: 1/2
+  unit: tsp
+  item: Cayenne Pepper
+  list: Staples
+- number: 1/2
+  unit: tsp
+  item: Cumin
+  list: Staples
+- number: 1/2
+  unit: tsp
+  item: Salt
+  list: Staples
+instructions:
+- text: In a large bowl place the scooped avocado pulp and lime juice, toss to coat.
+- text: Using a potato masher add the salt, cumin, and cayenne and mash. Then, fold in the onions, tomatoes, cilantro, and garlic.
+- text: Let sit at room temperature for 1 hour and then serve.
+sources:
+- name: Alton Brown
+  url: https://www.foodnetwork.com/recipes/alton-brown/guacamole-recipe-1940609

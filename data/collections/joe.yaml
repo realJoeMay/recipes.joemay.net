@@ -1,0 +1,9 @@
+name: Joe
+label: Joe's Recipes
+url_path: joe
+recipes: 
+- cbp-lunch
+- ccwr-lunch
+- joe-burger
+- beef-n-cheddar
+- beef-sam

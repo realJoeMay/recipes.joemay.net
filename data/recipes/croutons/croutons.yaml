@@ -1,0 +1,38 @@
+title: Croutons
+yield:
+- number: 4
+  unit: servings
+- number: 40
+  unit: croutons
+scale:
+- multiplier: 2
+ingredients:
+- number: 2
+  unit: slices
+  item: Italian Bread
+- number: 2
+  unit: tbsp
+  item: Olive Oil
+- number: 2
+  unit: tbsp
+  item: Butter
+- number: 1
+  unit: tsp
+  item: Italian Seasoning
+- number: 1/2
+  unit: tsp
+  item: Garlic Powder
+- number: 1/8
+  unit: tsp
+  item: Salt
+- number: 1/8
+  unit: tsp
+  item: Black Pepper
+instructions:
+- text: Preheat oven to 170 convection. Line a large baking sheet with parchment paper.
+- text: Cut the bread into 3/4 inch cubes. Spread on baking sheet and cook until bread is dry, about 9 minutes, then remove from oven.
+- text: Set the oven to 350 convection. In a large bowl, mix the remaining ingredients. Add the bread and toss gently.
+- text: Cook until golden brown, about 12 minutes.
+sources:
+- name: Gimme Some Oven
+  url: https://www.gimmesomeoven.com/how-to-make-homemade-croutons/

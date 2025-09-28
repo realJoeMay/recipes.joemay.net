@@ -1,0 +1,21 @@
+title: Balsamic-Glazed Brussels Sprouts & Carrots
+yield:
+- number: 2
+  unit: servings
+scale:
+- multiplier: 2
+ingredients:
+- text: 8 oz Brussels Sprouts
+- text: 8 oz Carrots
+- text: 4 tsp Balsamic Glaze
+- text: 0.5 tbsp Italian Seasoning
+- text: 0.5 tsp Black Pepper
+- text: 0.5 tsp Salt
+instructions:
+- text: Adjust rack to top position and preheat oven to 450 degrees. Trim and halve Brussels sprouts. Peel and cut carrots on a diagonal into half-inch pieces.
+- text: Add them to a baking sheet with a large drizzle of oil, the Italian Seasoning, salt, and pepper.
+- text: Roast until tender and lightly browned, 20-25 minutes.
+- text: Transfer to a large bowl. Add the balsamic glaze and toss until evenly coated.
+sources:
+- name: HelloFresh
+  url: https://www.hellofresh.com/recipes/creamy-lemon-herb-pork-chops-6267f614f9d463d26c0caaf9

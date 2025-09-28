@@ -1,0 +1,62 @@
+title: Chicken Noodle Soup
+subtitle: via slow cooker
+yield:
+- number: 8
+  unit: servings
+- number: 12
+  unit: cups
+  show_serving_size: true
+  show_yield: false
+ingredients:
+- number: 2
+  unit: lb
+  item: Boneless Skinless Chicken Thighs
+  list: Ingredients
+- number: 1
+  item: Sweet Onion
+  list: Ingredients
+- number: 8
+  unit: oz
+  item: Egg Noodles
+  list: Ingredients
+- number: 4
+  unit: ribs
+  item: Celery
+  list: Ingredients
+- number: 0.5
+  unit: lb
+  item: Carrots
+  list: Ingredients
+- number: 3
+  unit: tsp
+  item: Minced Garlic
+  list: Staples
+- number: 1
+  unit: tsp
+  item: Basil
+  list: Staples
+- number: 0.5
+  unit: tsp
+  item: Thyme
+  list: Staples
+- number: 1
+  item: Bay Leaf
+  list: Staples
+- number: 0.25
+  unit: tsp
+  item: Black Pepper
+  list: Staples
+- number: 1
+  unit: tbsp
+  item: Salt
+  list: Staples
+instructions:
+- text: Slice the onion, carrots, and celery. Add the onion, carrots, celery, and garlic to a 6 quart slow cooker.
+- text: Place the chicken on top of the vegetables, then add the basil, parsley, thyme, bay leaf, and pepper.
+- text: Pour 8 cups of water over the ingredients. Place the lid on the slow cooker and cook on high for 4 hours or low for 8 hours.
+- text: After cooking, remove the chicken to a cutting board and discard the bay leaf. Add the egg noodles to the slow cooker, stir to combine, and replace the lid, cooking on high.
+- text: Shred the chicken, then return it to the slow cooker and stir to combine with the soup.
+- text: Once the chicken has been returned to the soup and the noodles are tender, begin seasoning the soup with salt, 1 tsp at a time. 
+sources:
+- name: BudgetByte
+  url: https://www.budgetbytes.com/slow-cooker-chicken-noodle-soup/
