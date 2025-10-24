@@ -1,9 +1,0 @@
-title: Burger
-yield:
-- number: 1
-  unit: servings
-ingredients:
-- text: 12 oz Ground Beef
-- text: 1/2 tsp Seasoned Salt
-- text: 2 tsp Mayonnaise
-- text: 1 Sesame Seed Bun
