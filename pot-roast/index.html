@@ -387,11 +387,18 @@ a.menu-header:hover {
 
 /* INGREDIENTS */
 
-.recipe-box-ingredients {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 0.75rem;
-    column-gap: 4%;
+.ingredient-list-header {
+    padding-bottom: 0.5rem;
+    padding-top: 1.2rem;
+    margin-top: 1.3rem;
+    border-top: solid 1px #ccc;
+
+}
+
+.ingredient-list-header:first-child {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
 }
 
 .ingredient-list-name {
@@ -399,19 +406,17 @@ a.menu-header:hover {
     font-size: 2rem;
     font-weight: 500;
     color: #343434;
-    padding-bottom: 0.5rem;
-
-    padding-top: 1.2rem;
-    margin-top: 1rem;
-    border-top: solid 1px #ccc;
 }
 
-.ingredient-list-name:first-child {
-    padding-top: 0;
-    margin-top: 0;
-    border-top: none;
-}
+/* .ingredient-list-name:first-child {
+} */
 
+.ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+    column-gap: 4%;
+}
 
 .ingredient {
     width: 100%;
@@ -462,6 +467,16 @@ a.menu-header:hover {
 
 
 /* DETAILS */
+.ingredient-detail.ingredient-detail-label {
+    display: none;
+    font-style: italic;
+    color: #555;
+    font-size: 1rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+
 .ingredient-detail {
     display: none;
     font-style: italic;
@@ -619,7 +634,7 @@ a.menu-header:hover {
 }
 
 .theme-dark .description-area,
-.theme-dark .ingredient-list-name,
+.theme-dark .ingredient-list-header,
 .theme-dark .step {
     border-color: #666;
 }
@@ -685,7 +700,7 @@ a.menu-header:hover {
     }
 
     .theme-system .description-area,
-    .theme-system .ingredient-list-name,
+    .theme-system .ingredient-list-header,
     .theme-system .step {
         border-color: #666;
     }
@@ -935,494 +950,498 @@ a.menu-header:hover {
                 <div class="recipe-box recipe-box-ingredients">
     
                     
-                    <h2 class='ingredient-list-name'>Ingredients</h2>
-        
+                    <div class="ingredient-list-header">
+                        <h2 class='ingredient-list-name'>Ingredients</h2>
+                        <span class="ingredient-detail ingredient-detail-label detail-cost">Showing cost</span>
+                        <span class="ingredient-detail ingredient-detail-label detail-cost-per-serving">Showing cost per serving</span>
+                        <span class="ingredient-detail ingredient-detail-label detail-nutrition-per-serving">Showing nutrition per serving</span>
+                    </div>
                     
-                    <div class="ingredient">
-        
+                    <div class="ingredient-list">
                         
-                        <div class="ingredient-amount">3 lb</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Chuck Roast
                             
+                            <div class="ingredient-amount">3 lb</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$26.97</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$4.49</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">666</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">55g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">40g</div>
-                                <div class="protein label">protein</div>
+                
+                            
+                            <div class="ingredient-item">
+                                Chuck Roast
+                                
+                                
                             </div>
-                        </div>
-                        
+                            
 
-                    </div><!-- ingredient -->
+                            <div class="ingredient-detail detail-cost">$26.97</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$4.49</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">666</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">55g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">40g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">1½ lb</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Baby Red Potatoes
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$3.99</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.66</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">125</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">30g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">3g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">4</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Carrots
+                                
+                                <span class="ingredient-item-descriptor">chopped into large chunks</span>
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.65</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.11</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">18</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">4g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">1</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Yellow Onion
+                                
+                                <span class="ingredient-item-descriptor">chopped</span>
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$1.18</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.20</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">11</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">2g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                    </div><!-- ingredient list -->
+
     
                 
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1½ lb</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Baby Red Potatoes
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$3.99</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.66</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">125</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">30g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">3g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">4</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Carrots
-                            
-                            <span class="ingredient-item-descriptor">chopped into large chunks</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.65</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.11</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">18</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">4g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Yellow Onion
-                            
-                            <span class="ingredient-item-descriptor">chopped</span>
-                            
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$1.18</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.20</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">11</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">2g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                
-                    <h2 class='ingredient-list-name'>Staples</h2>
-        
+                    <div class="ingredient-list-header">
+                        <h2 class='ingredient-list-name'>Staples</h2>
+                        <span class="ingredient-detail ingredient-detail-label detail-cost">Showing cost</span>
+                        <span class="ingredient-detail ingredient-detail-label detail-cost-per-serving">Showing cost per serving</span>
+                        <span class="ingredient-detail ingredient-detail-label detail-nutrition-per-serving">Showing nutrition per serving</span>
+                    </div>
                     
-                    <div class="ingredient">
-        
+                    <div class="ingredient-list">
                         
-                        <div class="ingredient-amount">3 tsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Beef Broth Base
                             
+                            <div class="ingredient-amount">3 tsp</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.47</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.08</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">5</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                
+                            
+                            <div class="ingredient-item">
+                                Beef Broth Base
+                                
+                                
                             </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">3 cups</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Water
                             
+
+                            <div class="ingredient-detail detail-cost">$0.47</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.08</div>
+
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.00</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">5</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
                             </div>
-                        </div>
-                        
+                            
 
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
+                        </div><!-- ingredient -->
                         
-                        <div class="ingredient-amount">2 tbsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Worcestershire Sauce
                             
+                            <div class="ingredient-amount">3 cups</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.10</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">5</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">1g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                
+                            
+                            <div class="ingredient-item">
+                                Water
+                                
+                                
                             </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tbsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Olive Oil
                             
+
+                            <div class="ingredient-detail detail-cost">$0.00</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
+
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.15</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">20</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">2g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
                             </div>
-                        </div>
-                        
+                            
 
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
+                        </div><!-- ingredient -->
                         
-                        <div class="ingredient-amount">1 tsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Onion Powder
                             
+                            <div class="ingredient-amount">2 tbsp</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.00</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
-
-                        
-
-                    </div><!-- ingredient -->
-    
                 
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">1 tsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Garlic Powder
                             
-                            
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.05</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                            <div class="ingredient-item">
+                                Worcestershire Sauce
+                                
+                                
                             </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
-                        
-                        <div class="ingredient-amount">½ tsp</div>
-                        
-            
-                        
-                        <div class="ingredient-item">
-                            Paprika
                             
+
+                            <div class="ingredient-detail detail-cost">$0.10</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
+
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.02</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">5</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">1g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
                             </div>
-                        </div>
-                        
+                            
 
-                    </div><!-- ingredient -->
-    
-                
-                    <div class="ingredient">
-        
+                        </div><!-- ingredient -->
                         
-                        <div class="ingredient-amount">½ tsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Black Pepper
                             
+                            <div class="ingredient-amount">1 tbsp</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.06</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
                 
-                    <div class="ingredient">
-        
+                            
+                            <div class="ingredient-item">
+                                Olive Oil
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.15</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.02</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">20</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">2g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
                         
-                        <div class="ingredient-amount">1 tsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Salt
                             
+                            <div class="ingredient-amount">1 tsp</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.03</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
                 
-                    <div class="ingredient">
-        
+                            
+                            <div class="ingredient-item">
+                                Onion Powder
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.00</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
+
+                            
+
+                        </div><!-- ingredient -->
                         
-                        <div class="ingredient-amount">1 tsp</div>
-                        
+                        <div class="ingredient">
             
-                        
-                        <div class="ingredient-item">
-                            Salt
                             
+                            <div class="ingredient-amount">1 tsp</div>
                             
-                        </div>
-                        
-
-                        <div class="ingredient-detail detail-cost">$0.03</div>
-                        <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
-
-                        
-                        <div class="ingredient-detail detail-nutrition-per-serving">
-                            <div class="nutrition">
-                                <div class="calories value">0</div>
-                                <div class="calories label">Calories</div>
-                                <div class="calories value">0g</div>
-                                <div class="fat label">fat</div>
-                                <div class="fat value">0g</div>
-                                <div class="carbs label">carbs</div>
-                                <div class="calories value">0g</div>
-                                <div class="protein label">protein</div>
-                            </div>
-                        </div>
-                        
-
-                    </div><!-- ingredient -->
-    
                 
+                            
+                            <div class="ingredient-item">
+                                Garlic Powder
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.05</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">½ tsp</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Paprika
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.02</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.00</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">½ tsp</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Black Pepper
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.06</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">1 tsp</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Salt
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.03</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                        <div class="ingredient">
+            
+                            
+                            <div class="ingredient-amount">1 tsp</div>
+                            
+                
+                            
+                            <div class="ingredient-item">
+                                Salt
+                                
+                                
+                            </div>
+                            
+
+                            <div class="ingredient-detail detail-cost">$0.03</div>
+                            <div class="ingredient-detail detail-cost-per-serving">$0.01</div>
+
+                            
+                            <div class="ingredient-detail detail-nutrition-per-serving">
+                                <div class="nutrition">
+                                    <div class="calories value">0</div>
+                                    <div class="calories label">Calories</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="fat label">fat</div>
+                                    <div class="fat value">0g</div>
+                                    <div class="carbs label">carbs</div>
+                                    <div class="calories value">0g</div>
+                                    <div class="protein label">protein</div>
+                                </div>
+                            </div>
+                            
+
+                        </div><!-- ingredient -->
+                        
+                    </div><!-- ingredient list -->
+
+    
                 
                 </div><!-- recipe-box -->
             </div><!-- scale -->
